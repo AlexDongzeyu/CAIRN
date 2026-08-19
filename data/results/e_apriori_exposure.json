@@ -1,0 +1,17 @@
+{
+  "n_narrators": 384,
+  "fold_proportions": [
+    0.6999490575649516,
+    0.15028018339276616,
+    0.1497707590422822
+  ],
+  "median_k": 4,
+  "mean_k": 5.111979166666667,
+  "n_k_equals_one": 68,
+  "frac_k_equals_one": 0.17708333333333334,
+  "expected_three_fold": 0.6411205220702131,
+  "expected_two_fold_p07": 0.6311767562420386,
+  "observed": 0.6484375,
+  "abs_error_three_fold": 0.007316977929786916,
+  "abs_error_two_fold": 0.017260743757961383
+}

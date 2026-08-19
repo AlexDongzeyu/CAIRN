@@ -1,0 +1,104 @@
+{
+  "folds": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "rows": [
+    {
+      "rank_map": "R-A",
+      "granularity": "fine",
+      "n_r2_cells": 638,
+      "n_narrators": 384,
+      "singleton_fraction": 0.6065830721003135,
+      "mean_k": 5.828125,
+      "frac_k_eq_1": 0.15885416666666666,
+      "predicted_exposure": 0.6748326013314004
+    },
+    {
+      "rank_map": "R-A",
+      "granularity": "mid",
+      "n_r2_cells": 141,
+      "n_narrators": 384,
+      "singleton_fraction": 0.20567375886524822,
+      "mean_k": 5.111979166666667,
+      "frac_k_eq_1": 0.17708333333333334,
+      "predicted_exposure": 0.6410794835644297
+    },
+    {
+      "rank_map": "R-A",
+      "granularity": "coarse",
+      "n_r2_cells": 48,
+      "n_narrators": 384,
+      "singleton_fraction": 0.14583333333333334,
+      "mean_k": 4.036458333333333,
+      "frac_k_eq_1": 0.20052083333333334,
+      "predicted_exposure": 0.5986237314406198
+    },
+    {
+      "rank_map": "R-B",
+      "granularity": "fine",
+      "n_r2_cells": 963,
+      "n_narrators": 397,
+      "singleton_fraction": 0.6542056074766355,
+      "mean_k": 7.632241813602015,
+      "frac_k_eq_1": 0.13350125944584382,
+      "predicted_exposure": 0.7351346635691961
+    },
+    {
+      "rank_map": "R-B",
+      "granularity": "mid",
+      "n_r2_cells": 179,
+      "n_narrators": 397,
+      "singleton_fraction": 0.20670391061452514,
+      "mean_k": 6.670025188916877,
+      "frac_k_eq_1": 0.14609571788413098,
+      "predicted_exposure": 0.7108301806895004
+    },
+    {
+      "rank_map": "R-B",
+      "granularity": "coarse",
+      "n_r2_cells": 50,
+      "n_narrators": 397,
+      "singleton_fraction": 0.14,
+      "mean_k": 5.083123425692695,
+      "frac_k_eq_1": 0.16624685138539042,
+      "predicted_exposure": 0.6632770343370878
+    },
+    {
+      "rank_map": "R-C",
+      "granularity": "fine",
+      "n_r2_cells": 793,
+      "n_narrators": 385,
+      "singleton_fraction": 0.6494325346784363,
+      "mean_k": 5.9714285714285715,
+      "frac_k_eq_1": 0.17662337662337663,
+      "predicted_exposure": 0.6744045479422286
+    },
+    {
+      "rank_map": "R-C",
+      "granularity": "mid",
+      "n_r2_cells": 137,
+      "n_narrators": 385,
+      "singleton_fraction": 0.2116788321167883,
+      "mean_k": 5.202597402597402,
+      "frac_k_eq_1": 0.18441558441558442,
+      "predicted_exposure": 0.6485167099133876
+    },
+    {
+      "rank_map": "R-C",
+      "granularity": "coarse",
+      "n_r2_cells": 47,
+      "n_narrators": 385,
+      "singleton_fraction": 0.14893617021276595,
+      "mean_k": 4.174025974025974,
+      "frac_k_eq_1": 0.21038961038961038,
+      "predicted_exposure": 0.6027574519058658
+    }
+  ],
+  "exposure_min": 0.5986237314406198,
+  "exposure_max": 0.7351346635691961,
+  "singleton_min": 0.14,
+  "singleton_max": 0.6542056074766355,
+  "n_configs": 9
+}

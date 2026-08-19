@@ -1,0 +1,17 @@
+{
+  "random": {
+    "n_narrators": 384,
+    "n_straddling": 249,
+    "frac_straddling": 0.6484375
+  },
+  "narrator_disjoint": {
+    "n_narrators": 384,
+    "n_straddling": 0,
+    "frac_straddling": 0.0
+  },
+  "event_disjoint": {
+    "n_narrators": 384,
+    "n_straddling": 235,
+    "frac_straddling": 0.6119791666666666
+  }
+}

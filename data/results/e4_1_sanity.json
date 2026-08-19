@@ -1,0 +1,74 @@
+{
+  "R-A|coarse": {
+    "B01_rows_eq_narrators": true,
+    "no_empty_rank1": true,
+    "ranks_in_range": true,
+    "members_subset_of_ground": true,
+    "orphan_moment_fraction": 0.767780698460383,
+    "all_pass": true
+  },
+  "R-A|mid": {
+    "B01_rows_eq_narrators": true,
+    "no_empty_rank1": true,
+    "ranks_in_range": true,
+    "members_subset_of_ground": true,
+    "orphan_moment_fraction": 0.767780698460383,
+    "all_pass": true
+  },
+  "R-A|fine": {
+    "B01_rows_eq_narrators": true,
+    "no_empty_rank1": true,
+    "ranks_in_range": true,
+    "members_subset_of_ground": true,
+    "orphan_moment_fraction": 0.767780698460383,
+    "all_pass": true
+  },
+  "R-B|coarse": {
+    "B01_rows_eq_narrators": true,
+    "no_empty_rank1": true,
+    "ranks_in_range": true,
+    "members_subset_of_ground": true,
+    "orphan_moment_fraction": 0.7053698835899361,
+    "all_pass": true
+  },
+  "R-B|mid": {
+    "B01_rows_eq_narrators": true,
+    "no_empty_rank1": true,
+    "ranks_in_range": true,
+    "members_subset_of_ground": true,
+    "orphan_moment_fraction": 0.7053698835899361,
+    "all_pass": true
+  },
+  "R-B|fine": {
+    "B01_rows_eq_narrators": true,
+    "no_empty_rank1": true,
+    "ranks_in_range": true,
+    "members_subset_of_ground": true,
+    "orphan_moment_fraction": 0.7053698835899361,
+    "all_pass": true
+  },
+  "R-C|coarse": {
+    "B01_rows_eq_narrators": true,
+    "no_empty_rank1": true,
+    "ranks_in_range": true,
+    "members_subset_of_ground": true,
+    "orphan_moment_fraction": 0.7719113781449493,
+    "all_pass": true
+  },
+  "R-C|mid": {
+    "B01_rows_eq_narrators": true,
+    "no_empty_rank1": true,
+    "ranks_in_range": true,
+    "members_subset_of_ground": true,
+    "orphan_moment_fraction": 0.7719113781449493,
+    "all_pass": true
+  },
+  "R-C|fine": {
+    "B01_rows_eq_narrators": true,
+    "no_empty_rank1": true,
+    "ranks_in_range": true,
+    "members_subset_of_ground": true,
+    "orphan_moment_fraction": 0.7719113781449493,
+    "all_pass": true
+  }
+}

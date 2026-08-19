@@ -1,0 +1,401 @@
+{
+  "counts": {
+    "DONE": 50,
+    "SUBSTITUTED": 5,
+    "MISSING": 1
+  },
+  "rows": [
+    {
+      "id": "0.3",
+      "name": "determinism / 10 seeds",
+      "status": "DONE",
+      "evidence": "src/seeds.py; runs carry seeds 0-9",
+      "note": "distinct seeds in runs: 10"
+    },
+    {
+      "id": "0.4",
+      "name": "pre-registration frozen",
+      "status": "DONE",
+      "evidence": "PREREGISTRATION.yaml",
+      "note": ""
+    },
+    {
+      "id": "1.1",
+      "name": "Densho corpus acquisition",
+      "status": "DONE",
+      "evidence": "corpus/densho/*.jsonl + LICENSE_AUDIT.csv",
+      "note": "526 interviews, 13315 segments; kill>=400 PASS"
+    },
+    {
+      "id": "1.2",
+      "name": "transfer corpus",
+      "status": "SUBSTITUTED",
+      "evidence": "data/results/e10_transfer.json",
+      "note": "held-out Densho collections instead of Rutgers (ledger E1_2)"
+    },
+    {
+      "id": "1.3",
+      "name": "transcript normalization",
+      "status": "DONE",
+      "evidence": "corpus/densho/normalized.jsonl",
+      "note": "speaker separation, disfluency handling, char offsets"
+    },
+    {
+      "id": "2.1",
+      "name": "rank annotation manual",
+      "status": "DONE",
+      "evidence": "annotation/RANK_MANUAL.md",
+      "note": ""
+    },
+    {
+      "id": "2.2",
+      "name": "inter-annotator agreement",
+      "status": "SUBSTITUTED",
+      "evidence": "e2_2_agreement.json",
+      "note": "alpha_R2=0.039; kill<0.55 TRIGGERED"
+    },
+    {
+      "id": "2.3",
+      "name": "R-A / R-B / R-C rank maps",
+      "status": "DONE",
+      "evidence": "e2_3_rank_maps.json",
+      "note": "R-A vs R-C differ on 20 terms"
+    },
+    {
+      "id": "3.1",
+      "name": "event mention detection + linking",
+      "status": "SUBSTITUTED",
+      "evidence": "e3_extraction.json",
+      "note": "archive's curated topic/facility/geography terms used as linked mentions"
+    },
+    {
+      "id": "3.2",
+      "name": "ECB+ / GVC CDEC calibration",
+      "status": "MISSING",
+      "evidence": "-",
+      "note": "external corpus not obtained; no claim made about linguistic coreference quality"
+    },
+    {
+      "id": "3.3",
+      "name": "in-domain CDEC + threshold sweep",
+      "status": "SUBSTITUTED",
+      "evidence": "e3_extraction.json:E3_3_threshold_sweep",
+      "note": "13 thresholds; optimum at boundary=False"
+    },
+    {
+      "id": "3.4",
+      "name": "cluster-level metrics (LEA primary)",
+      "status": "DONE",
+      "evidence": "e3_extraction.json:E3_4_cluster_metrics",
+      "note": "LEA F1=0.196"
+    },
+    {
+      "id": "3.5",
+      "name": "merge/split + attestation distortion",
+      "status": "DONE",
+      "evidence": "e3_extraction.json:E3_5_error_decomposition",
+      "note": "false_singleton=0.367; kill>0.30 TRIGGERED"
+    },
+    {
+      "id": "3.6",
+      "name": "extraction ambiguity flagging",
+      "status": "DONE",
+      "evidence": "e3_extraction.json:E3_6_ambiguity",
+      "note": ""
+    },
+    {
+      "id": "4.1",
+      "name": "build combinatorial complex",
+      "status": "DONE",
+      "evidence": "e4_1_summaries.json + e4_1_sanity.json",
+      "note": ""
+    },
+    {
+      "id": "4.2",
+      "name": "star expansion round-trip",
+      "status": "DONE",
+      "evidence": "e4_2_star_roundtrip.json",
+      "note": "lossless=True"
+    },
+    {
+      "id": "4.3",
+      "name": "granularity sweep + RBO",
+      "status": "DONE",
+      "evidence": "e4_3_granularity.json",
+      "note": "H3 granularity leg NOT met (kill TRIGGERED)"
+    },
+    {
+      "id": "4.4",
+      "name": "rank/cardinality decoupling",
+      "status": "DONE",
+      "evidence": "e4_4_decoupling.json",
+      "note": "rho=0.471; kill>0.9 passed"
+    },
+    {
+      "id": "5.1",
+      "name": "tasks T1 / T2 / T3",
+      "status": "DONE",
+      "evidence": "e7_1_runs.json",
+      "note": "T1=True T2=True T3=True"
+    },
+    {
+      "id": "5.2",
+      "name": "leakage-resistant splits",
+      "status": "DONE",
+      "evidence": "e7_1_runs.json:split",
+      "note": "present: ['event-disjoint', 'narrator-disjoint', 'random']"
+    },
+    {
+      "id": "5.3",
+      "name": "negative sampling regimes",
+      "status": "DONE",
+      "evidence": "e7_1_runs.json:neg_regime",
+      "note": "missing: []"
+    },
+    {
+      "id": "6.0",
+      "name": "shared controls / param budget",
+      "status": "DONE",
+      "evidence": "e7_1_runs.json",
+      "note": "param spread 0-132219"
+    },
+    {
+      "id": "6.1",
+      "name": "M0 feature-only MLP",
+      "status": "DONE",
+      "evidence": "e7_1_runs.json:model",
+      "note": ""
+    },
+    {
+      "id": "6.2",
+      "name": "M1 dense-retrieval baseline",
+      "status": "DONE",
+      "evidence": "e7_1_runs.json:model",
+      "note": ""
+    },
+    {
+      "id": "6.3",
+      "name": "M2 untyped star GNN",
+      "status": "DONE",
+      "evidence": "e7_1_runs.json:model",
+      "note": ""
+    },
+    {
+      "id": "6.4",
+      "name": "M3 typed star + hypergraph encodings",
+      "status": "DONE",
+      "evidence": "e7_1_runs.json:model",
+      "note": ""
+    },
+    {
+      "id": "6.5",
+      "name": "M4 AllSet / ED-HNN / Hypergraph-MLP",
+      "status": "DONE",
+      "evidence": "e7_1_runs.json:model",
+      "note": ""
+    },
+    {
+      "id": "6.6",
+      "name": "M5 CCNN",
+      "status": "DONE",
+      "evidence": "e7_1_runs.json:model",
+      "note": ""
+    },
+    {
+      "id": "6.7",
+      "name": "ablations A1-A5",
+      "status": "DONE",
+      "evidence": "e7_1_runs.json:model",
+      "note": "missing: []"
+    },
+    {
+      "id": "7.1",
+      "name": "results grid",
+      "status": "DONE",
+      "evidence": "e7_1_runs.json",
+      "note": "580 runs"
+    },
+    {
+      "id": "7.2",
+      "name": "stratified reporting",
+      "status": "DONE",
+      "evidence": "e7_2_stratified.json",
+      "note": ""
+    },
+    {
+      "id": "7.3",
+      "name": "ASO + Bonferroni",
+      "status": "DONE",
+      "evidence": "e7_3_aso_T1_map.json / e7_3_aso_T2_auc.json",
+      "note": ""
+    },
+    {
+      "id": "7.4",
+      "name": "clustered bootstrap + DEFF",
+      "status": "DONE",
+      "evidence": "e7_4_uncertainty.json",
+      "note": "DEFF=138.9501408370363"
+    },
+    {
+      "id": "7.5",
+      "name": "interaction model",
+      "status": "DONE",
+      "evidence": "e7_5_interaction.json",
+      "note": "coef=-0.08469532064299866 crosses_zero=False"
+    },
+    {
+      "id": "8.1",
+      "name": "calibrated perturbation",
+      "status": "DONE",
+      "evidence": "e8_1_perturbation.json",
+      "note": "25 grid points; RBO@rho_hat=0.3241036477169837"
+    },
+    {
+      "id": "8.2",
+      "name": "extraction-system ablation",
+      "status": "DONE",
+      "evidence": "e8_2_extractor.json",
+      "note": ""
+    },
+    {
+      "id": "8.3",
+      "name": "gold-subset upper bound",
+      "status": "DONE",
+      "evidence": "e8_3_gold_subset.json",
+      "note": "noise-free ceiling"
+    },
+    {
+      "id": "8.4",
+      "name": "interviewer-turn ablation",
+      "status": "DONE",
+      "evidence": "e8_4_interviewer.json",
+      "note": ""
+    },
+    {
+      "id": "9.1",
+      "name": "terminology CI check",
+      "status": "DONE",
+      "evidence": "tests/test_terminology.py",
+      "note": ""
+    },
+    {
+      "id": "9.2",
+      "name": "triage list + stability",
+      "status": "DONE",
+      "evidence": "e9_2_triage.json",
+      "note": "50 items, 8 unstable"
+    },
+    {
+      "id": "9.3",
+      "name": "expert validation",
+      "status": "SUBSTITUTED",
+      "evidence": "e9_3_frequency_baseline.json",
+      "note": "frequency-baseline contrast run; expert panel NOT available (ledger E9_3)"
+    },
+    {
+      "id": "9.4",
+      "name": "cost-of-error",
+      "status": "DONE",
+      "evidence": "e9_4_cost_of_error.json",
+      "note": ""
+    },
+    {
+      "id": "10.1",
+      "name": "meta-rank mapping + agreement drop",
+      "status": "DONE",
+      "evidence": "e10_transfer.json:E10_1_meta_rank",
+      "note": ""
+    },
+    {
+      "id": "10.2",
+      "name": "zero-shot transfer",
+      "status": "DONE",
+      "evidence": "e10_transfer.json:E10_2_zero_shot",
+      "note": ""
+    },
+    {
+      "id": "10.3",
+      "name": "conclusion transfer",
+      "status": "DONE",
+      "evidence": "e10_transfer.json:E10_3_conclusion_transfer",
+      "note": ""
+    },
+    {
+      "id": "11.1",
+      "name": "topology kill criterion declared",
+      "status": "DONE",
+      "evidence": "e11_topology.json:kill_criterion",
+      "note": ""
+    },
+    {
+      "id": "11.2",
+      "name": "attestation filtration",
+      "status": "DONE",
+      "evidence": "e11_topology.json:persistence",
+      "note": ""
+    },
+    {
+      "id": "11.3",
+      "name": "permutation test",
+      "status": "DONE",
+      "evidence": "e11_topology.json:permutation_test",
+      "note": ""
+    },
+    {
+      "id": "11.4",
+      "name": "simpler-explanation check",
+      "status": "DONE",
+      "evidence": "e11_topology.json:simpler_explanation_check",
+      "note": "verdict=DELETE the topology section; it adds no contribution and unmotivated persistent homology costs credibility"
+    },
+    {
+      "id": "12.1",
+      "name": "Figure 1",
+      "status": "DONE",
+      "evidence": "figures/fig1_representations.pdf",
+      "note": ""
+    },
+    {
+      "id": "12.2",
+      "name": "Figure 2",
+      "status": "DONE",
+      "evidence": "figures/fig2_granularity.pdf",
+      "note": ""
+    },
+    {
+      "id": "12.3",
+      "name": "Figure 3",
+      "status": "DONE",
+      "evidence": "figures/fig3_models.pdf",
+      "note": ""
+    },
+    {
+      "id": "12.4",
+      "name": "Figure 4",
+      "status": "DONE",
+      "evidence": "figures/fig4_uncertainty.pdf",
+      "note": ""
+    },
+    {
+      "id": "13.1",
+      "name": "stand-off release",
+      "status": "DONE",
+      "evidence": "release/cells.jsonl + splits/ + DATASET_CARD.md",
+      "note": ""
+    },
+    {
+      "id": "13.2",
+      "name": "reproduction check",
+      "status": "DONE",
+      "evidence": "e13_2_reproduction.json",
+      "note": ""
+    },
+    {
+      "id": "13.3",
+      "name": "dataset card",
+      "status": "DONE",
+      "evidence": "release/DATASET_CARD.md",
+      "note": ""
+    }
+  ]
+}

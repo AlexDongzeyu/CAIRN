@@ -1,0 +1,29 @@
+{
+  "method": "fresh isolated interpreter (-I), cwd inside release/, project source not importable; reads only the released files",
+  "comparison": {
+    "n_interviews": {
+      "published": 526,
+      "from_release": 526,
+      "match": true
+    },
+    "n_segments": {
+      "published": 13315,
+      "from_release": 13315,
+      "match": true
+    },
+    "n_narrators": {
+      "published": 470,
+      "from_release": 470,
+      "match": true
+    }
+  },
+  "all_match": true,
+  "cells_per_rank_mid": {
+    "0": 470,
+    "1": 13315,
+    "2": 141,
+    "3": 70
+  },
+  "error": "",
+  "limitation": "this verifies the release is self-sufficient, NOT that an independent person reproduced it; the protocol's E13.2 asks for the latter"
+}

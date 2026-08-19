@@ -1,0 +1,39 @@
+{
+  "labelled": "EXPLORATORY - intervention on the hypothesised cause",
+  "prediction": "if aggregating features up the ladder is what the random split leaks, the complex's random-split gap shrinks markedly under item-specific rank-1 features",
+  "narrator_mean": {
+    "M5_ccnn": {
+      "random": 0.41264127672666373,
+      "narrator-disjoint": 0.09791561198664203
+    },
+    "M3_typed_star": {
+      "random": 0.11448176116074234,
+      "narrator-disjoint": 0.1386803682464059
+    }
+  },
+  "item_specific": {
+    "M5_ccnn": {
+      "random": 0.541004524358643,
+      "narrator-disjoint": 0.15583159537891253
+    },
+    "M3_typed_star": {
+      "random": 0.12273454450230645,
+      "narrator-disjoint": 0.14111584496269008
+    }
+  },
+  "split_gap": {
+    "M5_ccnn": {
+      "gap_narrator_mean": 0.3147256647400217,
+      "gap_item_specific": 0.38517292897973043,
+      "gap_reduction": -0.0704472642397087,
+      "gap_reduction_frac": -0.22383704963464443
+    },
+    "M3_typed_star": {
+      "gap_narrator_mean": -0.024198607085663557,
+      "gap_item_specific": -0.018381300460383637,
+      "gap_reduction": -0.005817306625279919,
+      "gap_reduction_frac": 0.24039840825079464
+    }
+  },
+  "prediction_held": false
+}

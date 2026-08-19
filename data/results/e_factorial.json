@@ -1,0 +1,105 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cells": {
+    "M3_typed_star|plain|narrator-disjoint": {
+      "T1_map": 0.06450099572312724,
+      "T1_map_ci": [
+        0.04869500164406315,
+        0.0812586072904111
+      ],
+      "T2_auc": 0.8041508223932399,
+      "n_params": 131337,
+      "hidden": 42,
+      "n_narrators": 56
+    },
+    "M3_typed_star|enc|narrator-disjoint": {
+      "T1_map": 0.146882326825703,
+      "T1_map_ci": [
+        0.12570210224552678,
+        0.1696464432828405
+      ],
+      "T2_auc": 0.8309090337508174,
+      "n_params": 132219,
+      "hidden": 42,
+      "n_narrators": 56
+    },
+    "M5_ccnn|plain|narrator-disjoint": {
+      "T1_map": 0.09735506966109767,
+      "T1_map_ci": [
+        0.07355548714054769,
+        0.12233794856918037
+      ],
+      "T2_auc": 0.5501252452089934,
+      "n_params": 128521,
+      "hidden": 44,
+      "n_narrators": 56
+    },
+    "M5_ccnn|enc|narrator-disjoint": {
+      "T1_map": 0.10068707138567619,
+      "T1_map_ci": [
+        0.08441605958048184,
+        0.11833244633997791
+      ],
+      "T2_auc": 0.70449650419999,
+      "n_params": 129445,
+      "hidden": 44,
+      "n_narrators": 56
+    },
+    "M3_typed_star|plain|random": {
+      "T1_map": 0.24162668689959807,
+      "T1_map_ci": [
+        0.18512052781450838,
+        0.2937252215491201
+      ],
+      "T2_auc": 0.7276982476299915,
+      "n_params": 131337,
+      "hidden": 42,
+      "n_narrators": 154
+    },
+    "M3_typed_star|enc|random": {
+      "T1_map": 0.11609027369266682,
+      "T1_map_ci": [
+        0.09571336347038889,
+        0.1365096275373699
+      ],
+      "T2_auc": 0.6717237575409365,
+      "n_params": 132219,
+      "hidden": 42,
+      "n_narrators": 154
+    },
+    "M5_ccnn|plain|random": {
+      "T1_map": 0.3946133122013904,
+      "T1_map_ci": [
+        0.3510865458594472,
+        0.434883456509482
+      ],
+      "T2_auc": 0.7494538351048549,
+      "n_params": 128521,
+      "hidden": 44,
+      "n_narrators": 154
+    },
+    "M5_ccnn|enc|random": {
+      "T1_map": 0.07547654017027709,
+      "T1_map_ci": [
+        0.06307018600145264,
+        0.08821323181570277
+      ],
+      "T2_auc": 0.7138534903763286,
+      "n_params": 129445,
+      "hidden": 44,
+      "n_narrators": 154
+    }
+  },
+  "operator_effect": {
+    "plain|narrator-disjoint": 0.03285407393797042,
+    "plain|random": 0.15298662530179233,
+    "enc|narrator-disjoint": -0.046195255440026825,
+    "enc|random": -0.04061373352238973
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "labelled": "EXPLORATORY - dose-response test of the stated mechanism",
+  "prediction": "positive slope under the random split, where a narrator's own segments are in training; flat under narrator-disjoint, where they are not",
+  "random": {
+    "n_narrators": 447,
+    "slope": 0.01545464812832866,
+    "slope_se": 0.012732471422182303,
+    "slope_p": 0.22482487681903462,
+    "slope_ci": [
+      -0.009500537293334136,
+      0.040409833549991454
+    ],
+    "ci_crosses_zero": true,
+    "mean_advantage": -0.017289393761418415,
+    "median_segments": 25.0
+  },
+  "narrator-disjoint": {
+    "n_narrators": 445,
+    "slope": -0.16916094573927692,
+    "slope_se": 0.036636615387768204,
+    "slope_p": 3.888314375524857e-06,
+    "slope_ci": [
+      -0.24096739241474857,
+      -0.09735449906380529
+    ],
+    "ci_crosses_zero": false,
+    "mean_advantage": 0.020256585958770525,
+    "median_segments": 25.0
+  },
+  "slope_difference": 0.1846155938676056,
+  "mechanism_supported": false
+}

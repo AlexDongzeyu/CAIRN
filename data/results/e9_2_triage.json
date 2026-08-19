@@ -1,0 +1,622 @@
+{
+  "granularity": "mid",
+  "rank_map": "R-A",
+  "k": 50,
+  "conditions_tested": [
+    "granularity=coarse",
+    "granularity=mid",
+    "granularity=fine",
+    "rank_map=R-B",
+    "rank_map=R-C",
+    "interviewers_included",
+    "perturbed_x1.0",
+    "perturbed_x2.0",
+    "extractor=S1_leaf_terms",
+    "extractor=S2_merged_parents",
+    "extractor=S3_place_split"
+  ],
+  "items": [
+    {
+      "label": "Arts and literature -- Performing arts -- Film -- Documentaries",
+      "referent": "Arts and literature -- Performing arts",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.25223244971877246,
+        1.7477675502812275
+      ],
+      "stability_score": 1.0,
+      "unstable": false,
+      "n_supporting_segments": 7
+    },
+    {
+      "label": "Arts and literature -- Visual arts -- Pottery",
+      "referent": "Arts and literature -- Visual arts",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.24573936744732416,
+        1.754260632552676
+      ],
+      "stability_score": 1.0,
+      "unstable": false,
+      "n_supporting_segments": 2
+    },
+    {
+      "label": "Community activities -- Festivals, celebrations, and holidays -- New Year festival",
+      "referent": "Community activities -- Festivals, celebrations, and holidays",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.2533913307720609,
+        1.746608669227939
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "Community activities -- Recreational activities -- Mushroom picking",
+      "referent": "Community activities -- Recreational activities",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.2467672386840687,
+        1.7532327613159313
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "Community activities -- Sports -- Bowling",
+      "referent": "Community activities -- Sports",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.2362300071165847,
+        1.7637699928834154
+      ],
+      "stability_score": 1.0,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "Geographic communities -- California -- San Francisco",
+      "referent": "Geographic communities -- California",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.2533913307720609,
+        1.746608669227939
+      ],
+      "stability_score": 0.6363636363636364,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "Geographic communities -- Washington -- Bainbridge Island",
+      "referent": "Geographic communities -- Washington",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.24326361856196477,
+        1.7567363814380352
+      ],
+      "stability_score": 0.6363636363636364,
+      "unstable": false,
+      "n_supporting_segments": 13
+    },
+    {
+      "label": "Geographic communities -- Washington -- Bellevue",
+      "referent": "Geographic communities -- Washington",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.258882329283632,
+        1.741117670716368
+      ],
+      "stability_score": 0.6363636363636364,
+      "unstable": false,
+      "n_supporting_segments": 3
+    },
+    {
+      "label": "Industry and employment -- Agriculture -- Greenhouses",
+      "referent": "Industry and employment -- Agriculture",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.24781671044277565,
+        1.7521832895572245
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "Industry and employment -- Law",
+      "referent": "Industry and employment -- Law",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.2505354922091326,
+        1.7494645077908673
+      ],
+      "stability_score": 0.45454545454545453,
+      "unstable": true,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "Industry and employment -- Retail",
+      "referent": "Industry and employment -- Retail",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.2570014825611304,
+        1.7429985174388696
+      ],
+      "stability_score": 0.6363636363636364,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "Industry and employment -- Small business -- General stores",
+      "referent": "Industry and employment -- Small business",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.2516612946345974,
+        1.7483387053654025
+      ],
+      "stability_score": 0.6363636363636364,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "Industry and employment -- Small business -- Laundromats",
+      "referent": "Industry and employment -- Small business",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.2362300071165847,
+        1.7637699928834154
+      ],
+      "stability_score": 0.6363636363636364,
+      "unstable": false,
+      "n_supporting_segments": 2
+    },
+    {
+      "label": "Industry and employment -- Small business -- Restaurants",
+      "referent": "Industry and employment -- Small business",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.2528091241681476,
+        1.7471908758318524
+      ],
+      "stability_score": 0.6363636363636364,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "Japan -- Government and politics",
+      "referent": "Japan -- Government and politics",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.24473300854165014,
+        1.7552669914583499
+      ],
+      "stability_score": 0.45454545454545453,
+      "unstable": true,
+      "n_supporting_segments": 3
+    },
+    {
+      "label": "Japan -- Military",
+      "referent": "Japan -- Military",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.24002097183202964,
+        1.7599790281679704
+      ],
+      "stability_score": 0.45454545454545453,
+      "unstable": true,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "Military service -- Post-World War II service",
+      "referent": "Military service -- Post-World War II service",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.24781671044277565,
+        1.7521832895572245
+      ],
+      "stability_score": 0.45454545454545453,
+      "unstable": true,
+      "n_supporting_segments": 3
+    },
+    {
+      "label": "World War II -- Concentration camps -- Conflicts, intimidation, and violence -- Manzanar riot/uprising",
+      "referent": "World War II -- Concentration camps",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.2545723924164838,
+        1.7454276075835162
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 2
+    },
+    {
+      "label": "World War II -- Concentration camps -- Publications -- Granada Pioneer",
+      "referent": "World War II -- Concentration camps",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.25577574025183836,
+        1.7442242597481616
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "World War II -- Concentration camps -- Publications -- Heart Mountain Sentinel",
+      "referent": "World War II -- Concentration camps",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.24473300854165014,
+        1.7552669914583499
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "World War II -- Mass removal (\"evacuation\") -- Aftermath",
+      "referent": "World War II -- Mass removal (\"evacuation\")",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.25397908248265666,
+        1.7460209175173433
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "World War II -- Military service -- 100th Infantry Battalion",
+      "referent": "World War II -- Military service",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.23744674297461954,
+        1.7625532570253806
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 2
+    },
+    {
+      "label": "World War II -- Military service -- 1800th Engineer General Service Battalion",
+      "referent": "World War II -- Military service",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.24002097183202964,
+        1.7599790281679704
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 5
+    },
+    {
+      "label": "World War II -- Military service -- Military Intelligence Service -- Merrill's Marauders",
+      "referent": "World War II -- Military service",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.24002097183202964,
+        1.7599790281679704
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 18
+    },
+    {
+      "label": "World War II -- Military service -- Office of Strategic Services",
+      "referent": "World War II -- Military service",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.2452335043743169,
+        1.7547664956256832
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 10
+    },
+    {
+      "label": "World War II -- Propaganda -- U.S. government propaganda",
+      "referent": "World War II -- Propaganda",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.244237869286122,
+        1.755762130713878
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "World War II -- Resistance and dissidence -- Segregation and Tule Lake -- Hoshidan",
+      "referent": "World War II -- Resistance and dissidence",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.2533913307720609,
+        1.746608669227939
+      ],
+      "stability_score": 0.6363636363636364,
+      "unstable": false,
+      "n_supporting_segments": 9
+    },
+    {
+      "label": "World War II -- Temporary Assembly Centers -- Education",
+      "referent": "World War II -- Temporary Assembly Centers",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.24002097183202964,
+        1.7599790281679704
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "World War II -- Temporary Assembly Centers -- Impacts of incarceration",
+      "referent": "World War II -- Temporary Assembly Centers",
+      "archive_conditioned_attestation_multiplicity": 1,
+      "attestation_ci": [
+        0.24278448647161988,
+        1.7572155135283802
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 1
+    },
+    {
+      "label": "Arts and literature -- Performing arts -- Music -- Taiko",
+      "referent": "Arts and literature -- Performing arts",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9294459144990894,
+        3.070554085500911
+      ],
+      "stability_score": 1.0,
+      "unstable": false,
+      "n_supporting_segments": 4
+    },
+    {
+      "label": "Arts and literature -- Visual arts -- Painting",
+      "referent": "Arts and literature -- Visual arts",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9556256971739603,
+        3.0443743028260397
+      ],
+      "stability_score": 1.0,
+      "unstable": false,
+      "n_supporting_segments": 5
+    },
+    {
+      "label": "Community activities -- Sports -- Baseball",
+      "referent": "Community activities -- Sports",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.883287323579772,
+        3.116712676420228
+      ],
+      "stability_score": 1.0,
+      "unstable": false,
+      "n_supporting_segments": 2
+    },
+    {
+      "label": "Community activities -- Sports -- Judo",
+      "referent": "Community activities -- Sports",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9490932416341058,
+        3.050906758365894
+      ],
+      "stability_score": 1.0,
+      "unstable": false,
+      "n_supporting_segments": 2
+    },
+    {
+      "label": "Industry and employment -- Agriculture -- Flower growers",
+      "referent": "Industry and employment -- Agriculture",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9376079539473745,
+        3.0623920460526257
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 20
+    },
+    {
+      "label": "Industry and employment -- Agriculture -- Strawberries",
+      "referent": "Industry and employment -- Agriculture",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9618114375949971,
+        3.038188562405003
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 3
+    },
+    {
+      "label": "Industry and employment -- Aviation",
+      "referent": "Industry and employment -- Aviation",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9340231368821459,
+        3.065976863117854
+      ],
+      "stability_score": 0.45454545454545453,
+      "unstable": true,
+      "n_supporting_segments": 2
+    },
+    {
+      "label": "Japanese Canadians -- Incarceration during World War II",
+      "referent": "Japanese Canadians -- Incarceration during World War II",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9298202437355747,
+        3.0701797562644253
+      ],
+      "stability_score": 0.45454545454545453,
+      "unstable": true,
+      "n_supporting_segments": 8
+    },
+    {
+      "label": "Japanese Latin Americans -- Deportation and internment during World War II",
+      "referent": "Japanese Latin Americans -- Deportation and internment during World War II",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9234037939544983,
+        3.076596206045502
+      ],
+      "stability_score": 0.45454545454545453,
+      "unstable": true,
+      "n_supporting_segments": 15
+    },
+    {
+      "label": "Japanese Latin Americans -- Redress and reparations",
+      "referent": "Japanese Latin Americans -- Redress and reparations",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9430681607190612,
+        3.0569318392809386
+      ],
+      "stability_score": 0.6363636363636364,
+      "unstable": false,
+      "n_supporting_segments": 6
+    },
+    {
+      "label": "World War II -- Concentration camps -- Arts and literature",
+      "referent": "World War II -- Concentration camps",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9652062344199663,
+        3.0347937655800337
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 2
+    },
+    {
+      "label": "World War II -- Concentration camps -- Sports",
+      "referent": "World War II -- Concentration camps",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9280278440564513,
+        3.0719721559435484
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 3
+    },
+    {
+      "label": "World War II -- Military service -- U.S. Counterintelligence Corps",
+      "referent": "World War II -- Military service",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9415744257876326,
+        3.058425574212367
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 17
+    },
+    {
+      "label": "World War II -- Military service -- Women's Army Corps/Women's Army Auxiliary Corps",
+      "referent": "World War II -- Military service",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9506917778534711,
+        3.0493082221465286
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 8
+    },
+    {
+      "label": "World War II -- Temporary Assembly Centers -- Conflicts, intimidation, and violence",
+      "referent": "World War II -- Temporary Assembly Centers",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.9289688787903847,
+        3.0710311212096153
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 2
+    },
+    {
+      "label": "World War II -- U.S. federal prisons",
+      "referent": "World War II -- U.S. federal prisons",
+      "archive_conditioned_attestation_multiplicity": 2,
+      "attestation_ci": [
+        0.8916850876696265,
+        3.1083149123303735
+      ],
+      "stability_score": 0.36363636363636365,
+      "unstable": true,
+      "n_supporting_segments": 7
+    },
+    {
+      "label": "Community activities -- Associations and organizations -- Student clubs",
+      "referent": "Community activities -- Associations and organizations",
+      "archive_conditioned_attestation_multiplicity": 3,
+      "attestation_ci": [
+        1.751431264990299,
+        4.248568735009701
+      ],
+      "stability_score": 0.9090909090909091,
+      "unstable": false,
+      "n_supporting_segments": 2
+    },
+    {
+      "label": "Community activities -- Recreational activities -- Picnics",
+      "referent": "Community activities -- Recreational activities",
+      "archive_conditioned_attestation_multiplicity": 3,
+      "attestation_ci": [
+        1.7278075430577082,
+        4.2721924569422915
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 3
+    },
+    {
+      "label": "Geographic communities -- Washington -- Seattle",
+      "referent": "Geographic communities -- Washington",
+      "archive_conditioned_attestation_multiplicity": 3,
+      "attestation_ci": [
+        1.7240204159067771,
+        4.275979584093223
+      ],
+      "stability_score": 0.6363636363636364,
+      "unstable": false,
+      "n_supporting_segments": 7
+    },
+    {
+      "label": "Industry and employment -- Small business -- Grocery stores",
+      "referent": "Industry and employment -- Small business",
+      "archive_conditioned_attestation_multiplicity": 3,
+      "attestation_ci": [
+        1.7325330191222454,
+        4.267466980877755
+      ],
+      "stability_score": 0.6363636363636364,
+      "unstable": false,
+      "n_supporting_segments": 6
+    },
+    {
+      "label": "World War II -- Temporary Assembly Centers -- Facilities, services, and camp administration",
+      "referent": "World War II -- Temporary Assembly Centers",
+      "archive_conditioned_attestation_multiplicity": 3,
+      "attestation_ci": [
+        1.7611770006016563,
+        4.2388229993983435
+      ],
+      "stability_score": 0.8181818181818182,
+      "unstable": false,
+      "n_supporting_segments": 3
+    }
+  ],
+  "n_unstable": 8,
+  "scope_statement": "under-attested within the analysed collection, at granularity mid, under rank map R-A; this is a property of what this archive records, not of history"
+}

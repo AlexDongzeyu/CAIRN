@@ -1,0 +1,43 @@
+# Allow-list: everything is ignored unless re-included below. The archive
+# corpus, embeddings, intermediate artifacts and build output stay local.
+/*
+
+!/.gitignore
+!/README.md
+!/PREREGISTRATION.yaml
+
+!/src/
+!/experiments/
+!/tests/
+!/paper/
+!/figures/
+!/release/
+!/data/
+
+# Python
+__pycache__/
+*.pyc
+
+# data/: only the small result files the paper's numbers are read from.
+/data/*
+!/data/results/
+/data/results/e7_per_item_primary.json
+/data/results/e_split_first.json
+
+# paper/: sources and the compiled PDF, no LaTeX build output.
+/paper/*.aux
+/paper/*.bbl
+/paper/*.blg
+/paper/*.log
+/paper/*.out
+/paper/*.toc
+/paper/PAPER_IMPROVEMENT_LOG.md
+/paper/build_report.json
+/paper/numbers_manifest.json
+
+# figures/: only the three the paper includes.
+/figures/*
+!/figures/captions.json
+!/figures/fig1_overview.jpg
+!/figures/fig3_models.pdf
+!/figures/fig7_mechanism.pdf

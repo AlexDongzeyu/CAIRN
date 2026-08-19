@@ -1,0 +1,42 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "val_query_limit": 150,
+  "cells": {
+    "M3_typed_star|narrator-disjoint": {
+      "auc_sel": 0.14687711041668086,
+      "map_sel": 0.16247663589989875,
+      "ep_auc": 1.8,
+      "ep_map": 55.0
+    },
+    "M5_ccnn|narrator-disjoint": {
+      "auc_sel": 0.0973630738780021,
+      "map_sel": 0.10156791679155926,
+      "ep_auc": 7.2,
+      "ep_map": 5.0
+    },
+    "M3_typed_star|random": {
+      "auc_sel": 0.10970246344737293,
+      "map_sel": 0.12729035746045986,
+      "ep_auc": 267.8,
+      "ep_map": 160.0
+    },
+    "M5_ccnn|random": {
+      "auc_sel": 0.34836157349117947,
+      "map_sel": 0.3633582770019317,
+      "ep_auc": 470.2,
+      "ep_map": 530.0
+    }
+  },
+  "ordering": {
+    "auc_sel|narrator-disjoint": -0.049514036538678766,
+    "map_sel|narrator-disjoint": -0.06090871910833949,
+    "auc_sel|random": 0.23865911004380652,
+    "map_sel|random": 0.23606791954147183
+  }
+}

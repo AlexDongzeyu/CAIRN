@@ -1,0 +1,516 @@
+{
+ "R-A|coarse": {
+  "all_ranks": {
+   "n": 13433,
+   "class_counts": {
+    "1": 13315,
+    "2": 48,
+    "3": 70
+   },
+   "logistic": {
+    "balanced_accuracy": 0.5296,
+    "cross_entropy": 0.0248,
+    "balanced_accuracy_gain": 0.1963,
+    "cross_entropy_reduction": 0.0315
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5153,
+    "cross_entropy": 0.04,
+    "balanced_accuracy_gain": 0.182,
+    "cross_entropy_reduction": 0.0163
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.3333,
+    "cross_entropy": 0.0563
+   }
+  },
+  "rank2_vs_rank3": {
+   "n": 118,
+   "class_counts": {
+    "2": 48,
+    "3": 70
+   },
+   "logistic": {
+    "balanced_accuracy": 0.5229,
+    "cross_entropy": 0.6833,
+    "balanced_accuracy_gain": 0.0229,
+    "cross_entropy_reduction": -0.0075
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5229,
+    "cross_entropy": 3.3523,
+    "balanced_accuracy_gain": 0.0229,
+    "cross_entropy_reduction": -2.6765
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.5,
+    "cross_entropy": 0.6758
+   }
+  },
+  "mutual_information_nats": 0.0358,
+  "mutual_information_nats_rank2_vs_rank3": 0.0466
+ },
+ "R-A|mid": {
+  "all_ranks": {
+   "n": 13526,
+   "class_counts": {
+    "1": 13315,
+    "2": 141,
+    "3": 70
+   },
+   "logistic": {
+    "balanced_accuracy": 0.5036,
+    "cross_entropy": 0.0418,
+    "balanced_accuracy_gain": 0.1703,
+    "cross_entropy_reduction": 0.0485
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5203,
+    "cross_entropy": 0.0456,
+    "balanced_accuracy_gain": 0.187,
+    "cross_entropy_reduction": 0.0447
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.3333,
+    "cross_entropy": 0.0903
+   }
+  },
+  "rank2_vs_rank3": {
+   "n": 211,
+   "class_counts": {
+    "2": 141,
+    "3": 70
+   },
+   "logistic": {
+    "balanced_accuracy": 0.5108,
+    "cross_entropy": 0.6233,
+    "balanced_accuracy_gain": 0.0108,
+    "cross_entropy_reduction": 0.0121
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5003,
+    "cross_entropy": 1.4879,
+    "balanced_accuracy_gain": 0.0003,
+    "cross_entropy_reduction": -0.8525
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.5,
+    "cross_entropy": 0.6354
+   }
+  },
+  "mutual_information_nats": 0.0522,
+  "mutual_information_nats_rank2_vs_rank3": 0.0
+ },
+ "R-A|fine": {
+  "all_ranks": {
+   "n": 14023,
+   "class_counts": {
+    "1": 13315,
+    "2": 638,
+    "3": 70
+   },
+   "logistic": {
+    "balanced_accuracy": 0.4671,
+    "cross_entropy": 0.1682,
+    "balanced_accuracy_gain": 0.1338,
+    "cross_entropy_reduction": 0.048
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.4491,
+    "cross_entropy": 0.1775,
+    "balanced_accuracy_gain": 0.1158,
+    "cross_entropy_reduction": 0.0387
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.3333,
+    "cross_entropy": 0.2162
+   }
+  },
+  "rank2_vs_rank3": {
+   "n": 708,
+   "class_counts": {
+    "2": 638,
+    "3": 70
+   },
+   "logistic": {
+    "balanced_accuracy": 0.6057,
+    "cross_entropy": 0.2438,
+    "balanced_accuracy_gain": 0.1057,
+    "cross_entropy_reduction": 0.0788
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.6113,
+    "cross_entropy": 0.3106,
+    "balanced_accuracy_gain": 0.1113,
+    "cross_entropy_reduction": 0.012
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.5,
+    "cross_entropy": 0.3226
+   }
+  },
+  "mutual_information_nats": 0.0553,
+  "mutual_information_nats_rank2_vs_rank3": 0.0689
+ },
+ "R-B|coarse": {
+  "all_ranks": {
+   "n": 13397,
+   "class_counts": {
+    "1": 13315,
+    "2": 50,
+    "3": 32
+   },
+   "logistic": {
+    "balanced_accuracy": 0.5267,
+    "cross_entropy": 0.0164,
+    "balanced_accuracy_gain": 0.1934,
+    "cross_entropy_reduction": 0.025
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.6033,
+    "cross_entropy": 0.0181,
+    "balanced_accuracy_gain": 0.27,
+    "cross_entropy_reduction": 0.0233
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.3333,
+    "cross_entropy": 0.0414
+   }
+  },
+  "rank2_vs_rank3": {
+   "n": 82,
+   "class_counts": {
+    "2": 50,
+    "3": 32
+   },
+   "logistic": {
+    "balanced_accuracy": 0.5,
+    "cross_entropy": 0.6658,
+    "balanced_accuracy_gain": 0.0,
+    "cross_entropy_reduction": 0.0035
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5363,
+    "cross_entropy": 3.5625,
+    "balanced_accuracy_gain": 0.0363,
+    "cross_entropy_reduction": -2.8932
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.5,
+    "cross_entropy": 0.6693
+   }
+  },
+  "mutual_information_nats": 0.0299,
+  "mutual_information_nats_rank2_vs_rank3": 0.1458
+ },
+ "R-B|mid": {
+  "all_ranks": {
+   "n": 13526,
+   "class_counts": {
+    "1": 13315,
+    "2": 179,
+    "3": 32
+   },
+   "logistic": {
+    "balanced_accuracy": 0.5151,
+    "cross_entropy": 0.0379,
+    "balanced_accuracy_gain": 0.1818,
+    "cross_entropy_reduction": 0.0491
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5039,
+    "cross_entropy": 0.0559,
+    "balanced_accuracy_gain": 0.1706,
+    "cross_entropy_reduction": 0.0311
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.3333,
+    "cross_entropy": 0.087
+   }
+  },
+  "rank2_vs_rank3": {
+   "n": 211,
+   "class_counts": {
+    "2": 179,
+    "3": 32
+   },
+   "logistic": {
+    "balanced_accuracy": 0.4916,
+    "cross_entropy": 0.388,
+    "balanced_accuracy_gain": -0.0084,
+    "cross_entropy_reduction": 0.0378
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5201,
+    "cross_entropy": 1.8517,
+    "balanced_accuracy_gain": 0.0201,
+    "cross_entropy_reduction": -1.4259
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.5,
+    "cross_entropy": 0.4258
+   }
+  },
+  "mutual_information_nats": 0.0526,
+  "mutual_information_nats_rank2_vs_rank3": 0.0468
+ },
+ "R-B|fine": {
+  "all_ranks": {
+   "n": 14310,
+   "class_counts": {
+    "1": 13315,
+    "2": 963,
+    "3": 32
+   },
+   "logistic": {
+    "balanced_accuracy": 0.471,
+    "cross_entropy": 0.2161,
+    "balanced_accuracy_gain": 0.1377,
+    "cross_entropy_reduction": 0.0462
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.4596,
+    "cross_entropy": 0.2285,
+    "balanced_accuracy_gain": 0.1263,
+    "cross_entropy_reduction": 0.0338
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.3333,
+    "cross_entropy": 0.2623
+   }
+  },
+  "rank2_vs_rank3": {
+   "n": 995,
+   "class_counts": {
+    "2": 963,
+    "3": 32
+   },
+   "logistic": {
+    "balanced_accuracy": 0.6068,
+    "cross_entropy": 0.0826,
+    "balanced_accuracy_gain": 0.1068,
+    "cross_entropy_reduction": 0.0596
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5745,
+    "cross_entropy": 0.2853,
+    "balanced_accuracy_gain": 0.0745,
+    "cross_entropy_reduction": -0.1431
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.5,
+    "cross_entropy": 0.1422
+   }
+  },
+  "mutual_information_nats": 0.0553,
+  "mutual_information_nats_rank2_vs_rank3": 0.0585
+ },
+ "R-C|coarse": {
+  "all_ranks": {
+   "n": 13436,
+   "class_counts": {
+    "1": 13315,
+    "2": 47,
+    "3": 74
+   },
+   "logistic": {
+    "balanced_accuracy": 0.5355,
+    "cross_entropy": 0.0249,
+    "balanced_accuracy_gain": 0.2022,
+    "cross_entropy_reduction": 0.0325
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5458,
+    "cross_entropy": 0.032,
+    "balanced_accuracy_gain": 0.2125,
+    "cross_entropy_reduction": 0.0254
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.3333,
+    "cross_entropy": 0.0574
+   }
+  },
+  "rank2_vs_rank3": {
+   "n": 121,
+   "class_counts": {
+    "2": 47,
+    "3": 74
+   },
+   "logistic": {
+    "balanced_accuracy": 0.5262,
+    "cross_entropy": 0.6728,
+    "balanced_accuracy_gain": 0.0262,
+    "cross_entropy_reduction": -0.0044
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5824,
+    "cross_entropy": 0.9187,
+    "balanced_accuracy_gain": 0.0824,
+    "cross_entropy_reduction": -0.2503
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.5,
+    "cross_entropy": 0.6684
+   }
+  },
+  "mutual_information_nats": 0.0365,
+  "mutual_information_nats_rank2_vs_rank3": 0.0432
+ },
+ "R-C|mid": {
+  "all_ranks": {
+   "n": 13526,
+   "class_counts": {
+    "1": 13315,
+    "2": 137,
+    "3": 74
+   },
+   "logistic": {
+    "balanced_accuracy": 0.497,
+    "cross_entropy": 0.042,
+    "balanced_accuracy_gain": 0.1637,
+    "cross_entropy_reduction": 0.0485
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5232,
+    "cross_entropy": 0.0458,
+    "balanced_accuracy_gain": 0.1899,
+    "cross_entropy_reduction": 0.0447
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.3333,
+    "cross_entropy": 0.0905
+   }
+  },
+  "rank2_vs_rank3": {
+   "n": 211,
+   "class_counts": {
+    "2": 137,
+    "3": 74
+   },
+   "logistic": {
+    "balanced_accuracy": 0.4978,
+    "cross_entropy": 0.6359,
+    "balanced_accuracy_gain": -0.0022,
+    "cross_entropy_reduction": 0.0121
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.4692,
+    "cross_entropy": 1.1813,
+    "balanced_accuracy_gain": -0.0308,
+    "cross_entropy_reduction": -0.5333
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.5,
+    "cross_entropy": 0.648
+   }
+  },
+  "mutual_information_nats": 0.0521,
+  "mutual_information_nats_rank2_vs_rank3": 0.0
+ },
+ "R-C|fine": {
+  "all_ranks": {
+   "n": 14182,
+   "class_counts": {
+    "1": 13315,
+    "2": 793,
+    "3": 74
+   },
+   "logistic": {
+    "balanced_accuracy": 0.4758,
+    "cross_entropy": 0.199,
+    "balanced_accuracy_gain": 0.1425,
+    "cross_entropy_reduction": 0.0489
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.4336,
+    "cross_entropy": 0.2008,
+    "balanced_accuracy_gain": 0.1003,
+    "cross_entropy_reduction": 0.0471
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.3333,
+    "cross_entropy": 0.2479
+   }
+  },
+  "rank2_vs_rank3": {
+   "n": 867,
+   "class_counts": {
+    "2": 793,
+    "3": 74
+   },
+   "logistic": {
+    "balanced_accuracy": 0.6337,
+    "cross_entropy": 0.2073,
+    "balanced_accuracy_gain": 0.1337,
+    "cross_entropy_reduction": 0.0844
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5902,
+    "cross_entropy": 0.2964,
+    "balanced_accuracy_gain": 0.0902,
+    "cross_entropy_reduction": -0.0047
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.5,
+    "cross_entropy": 0.2917
+   }
+  },
+  "mutual_information_nats": 0.0568,
+  "mutual_information_nats_rank2_vs_rank3": 0.0817
+ },
+ "primary": {
+  "all_ranks": {
+   "n": 13526,
+   "class_counts": {
+    "1": 13315,
+    "2": 141,
+    "3": 70
+   },
+   "logistic": {
+    "balanced_accuracy": 0.5036,
+    "cross_entropy": 0.0418,
+    "balanced_accuracy_gain": 0.1703,
+    "cross_entropy_reduction": 0.0485
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5203,
+    "cross_entropy": 0.0456,
+    "balanced_accuracy_gain": 0.187,
+    "cross_entropy_reduction": 0.0447
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.3333,
+    "cross_entropy": 0.0903
+   }
+  },
+  "rank2_vs_rank3": {
+   "n": 211,
+   "class_counts": {
+    "2": 141,
+    "3": 70
+   },
+   "logistic": {
+    "balanced_accuracy": 0.5108,
+    "cross_entropy": 0.6233,
+    "balanced_accuracy_gain": 0.0108,
+    "cross_entropy_reduction": 0.0121
+   },
+   "tree_depth3": {
+    "balanced_accuracy": 0.5003,
+    "cross_entropy": 1.4879,
+    "balanced_accuracy_gain": 0.0003,
+    "cross_entropy_reduction": -0.8525
+   },
+   "prior_only": {
+    "balanced_accuracy": 0.5,
+    "cross_entropy": 0.6354
+   }
+  },
+  "mutual_information_nats": 0.0522,
+  "mutual_information_nats_rank2_vs_rank3": 0.0
+ },
+ "max_balanced_accuracy_rank2_vs_rank3": {
+  "value": 0.6113,
+  "cell": "R-A|fine"
+ }
+}

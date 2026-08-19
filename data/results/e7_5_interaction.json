@@ -1,0 +1,31 @@
+{
+  "model_a": "M5_ccnn",
+  "model_b": "M3_typed_star",
+  "n_obs": 5694,
+  "n_narrators": 445,
+  "n_events": 75,
+  "converged": true,
+  "interaction_coef": -0.08469532064299866,
+  "interaction_se": 0.010002998017294443,
+  "interaction_p": 2.5180782425140183e-17,
+  "interaction_ci": [
+    -0.10430083649432134,
+    -0.06508980479167598
+  ],
+  "main_effect_model": 0.22262587374290835,
+  "ci_crosses_zero": false,
+  "direction": "negative",
+  "superseded": {
+    "reason": "the earlier fit filtered on model only and pooled every cell in the grid, including the random split where this ordering reverses",
+    "n_events": 75,
+    "n_narrators": 445,
+    "n_obs": 5694,
+    "interaction_coef": -0.08469532064299866,
+    "interaction_ci": [
+      -0.10430083649432134,
+      -0.06508980479167598
+    ],
+    "interaction_p": 2.5180782425140183e-17
+  },
+  "scope": "primary cell only: granularity=mid, split=narrator-disjoint, negatives=MNS, rank_map=R-A"
+}

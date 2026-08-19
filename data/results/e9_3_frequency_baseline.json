@@ -1,0 +1,8 @@
+{
+  "spearman_attestation_vs_mention_frequency": 0.8791459068813737,
+  "p_value": 1.3871066595082703e-46,
+  "rbo50_triage_attestation_vs_frequency": 0.44380651157463674,
+  "jaccard_top10": 0.5,
+  "interpretation": "if a bare mention-frequency ranking reproduces the structure-derived ranking, the complex adds nothing to the application and we say so",
+  "expert_panel": "NOT RUN - no domain experts available (see PREREGISTRATION substitution_ledger E9_3_expert_panel); the application claim is downgraded to 'computationally stable', NOT 'expert-validated'"
+}

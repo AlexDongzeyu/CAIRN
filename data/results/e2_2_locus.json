@@ -1,0 +1,21 @@
+{
+  "question": "is the rank ladder reproducible where the archive's own practice settles it, and irreproducible where a protocol must infer?",
+  "a1_never_defers": "a1_structural sets (q2, q3) = (not has_children, has_children), which are complementary, so it never reaches the tie-break; a condition requiring all three to defer is unsatisfiable",
+  "both_deferring_protocols": {
+    "n": 0
+  },
+  "at_least_one_inferring": {
+    "n": 211,
+    "unanimous": 65,
+    "unanimous_rate": 0.3080568720379147,
+    "alpha": 0.033598659405111087,
+    "A2_vs_A3": 0.5355450236966824,
+    "A1_vs_A2": 0.4976303317535545,
+    "A1_vs_A3": 0.5829383886255924
+  },
+  "n_terms": 211,
+  "defer_rate_A2_lexical": 0.4597156398104265,
+  "defer_rate_A3_distributional": 0.0,
+  "defer_rate_both": 0.0,
+  "tie_break": "q4_archive_practice: facet path depth <= 2 -> rank 3, else rank 2; deterministic, so any two protocols reaching it agree by construction"
+}

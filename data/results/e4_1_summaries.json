@@ -1,0 +1,335 @@
+{
+  "R-A|coarse": {
+    "granularity": "coarse",
+    "rank_map": "R-A",
+    "n_narrators": 470,
+    "rank0": {
+      "n_cells": 470,
+      "size_mean": 1.0,
+      "size_median": 1.0,
+      "size_max": 1,
+      "size_min": 1,
+      "singleton_fraction": 1.0
+    },
+    "rank1": {
+      "n_cells": 13315,
+      "size_mean": 1.0569282763800225,
+      "size_median": 1.0,
+      "size_max": 4,
+      "size_min": 1,
+      "singleton_fraction": 0.9648516710476905
+    },
+    "rank2": {
+      "n_cells": 48,
+      "size_mean": 32.291666666666664,
+      "size_median": 11.5,
+      "size_max": 192,
+      "size_min": 1,
+      "singleton_fraction": 0.14583333333333334
+    },
+    "rank3": {
+      "n_cells": 70,
+      "size_mean": 17.442857142857143,
+      "size_median": 6.5,
+      "size_max": 157,
+      "size_min": 1,
+      "singleton_fraction": 0.15714285714285714
+    }
+  },
+  "R-A|mid": {
+    "granularity": "mid",
+    "rank_map": "R-A",
+    "n_narrators": 470,
+    "rank0": {
+      "n_cells": 470,
+      "size_mean": 1.0,
+      "size_median": 1.0,
+      "size_max": 1,
+      "size_min": 1,
+      "singleton_fraction": 1.0
+    },
+    "rank1": {
+      "n_cells": 13315,
+      "size_mean": 1.0569282763800225,
+      "size_median": 1.0,
+      "size_max": 4,
+      "size_min": 1,
+      "singleton_fraction": 0.9648516710476905
+    },
+    "rank2": {
+      "n_cells": 141,
+      "size_mean": 13.921985815602836,
+      "size_median": 6.0,
+      "size_max": 106,
+      "size_min": 1,
+      "singleton_fraction": 0.20567375886524822
+    },
+    "rank3": {
+      "n_cells": 70,
+      "size_mean": 21.557142857142857,
+      "size_median": 12.0,
+      "size_max": 157,
+      "size_min": 1,
+      "singleton_fraction": 0.12857142857142856
+    }
+  },
+  "R-A|fine": {
+    "granularity": "fine",
+    "rank_map": "R-A",
+    "n_narrators": 470,
+    "rank0": {
+      "n_cells": 470,
+      "size_mean": 1.0,
+      "size_median": 1.0,
+      "size_max": 1,
+      "size_min": 1,
+      "singleton_fraction": 1.0
+    },
+    "rank1": {
+      "n_cells": 13315,
+      "size_mean": 1.0569282763800225,
+      "size_median": 1.0,
+      "size_max": 4,
+      "size_min": 1,
+      "singleton_fraction": 0.9648516710476905
+    },
+    "rank2": {
+      "n_cells": 638,
+      "size_mean": 3.5078369905956115,
+      "size_median": 1.0,
+      "size_max": 97,
+      "size_min": 1,
+      "singleton_fraction": 0.6065830721003135
+    },
+    "rank3": {
+      "n_cells": 70,
+      "size_mean": 21.557142857142857,
+      "size_median": 12.0,
+      "size_max": 157,
+      "size_min": 1,
+      "singleton_fraction": 0.12857142857142856
+    }
+  },
+  "R-B|coarse": {
+    "granularity": "coarse",
+    "rank_map": "R-B",
+    "n_narrators": 470,
+    "rank0": {
+      "n_cells": 470,
+      "size_mean": 1.0,
+      "size_median": 1.0,
+      "size_max": 1,
+      "size_min": 1,
+      "singleton_fraction": 1.0
+    },
+    "rank1": {
+      "n_cells": 13315,
+      "size_mean": 1.0569282763800225,
+      "size_median": 1.0,
+      "size_max": 4,
+      "size_min": 1,
+      "singleton_fraction": 0.9648516710476905
+    },
+    "rank2": {
+      "n_cells": 50,
+      "size_mean": 40.36,
+      "size_median": 16.0,
+      "size_max": 223,
+      "size_min": 1,
+      "singleton_fraction": 0.14
+    },
+    "rank3": {
+      "n_cells": 32,
+      "size_mean": 17.59375,
+      "size_median": 13.5,
+      "size_max": 73,
+      "size_min": 1,
+      "singleton_fraction": 0.09375
+    }
+  },
+  "R-B|mid": {
+    "granularity": "mid",
+    "rank_map": "R-B",
+    "n_narrators": 470,
+    "rank0": {
+      "n_cells": 470,
+      "size_mean": 1.0,
+      "size_median": 1.0,
+      "size_max": 1,
+      "size_min": 1,
+      "singleton_fraction": 1.0
+    },
+    "rank1": {
+      "n_cells": 13315,
+      "size_mean": 1.0569282763800225,
+      "size_median": 1.0,
+      "size_max": 4,
+      "size_min": 1,
+      "singleton_fraction": 0.9648516710476905
+    },
+    "rank2": {
+      "n_cells": 179,
+      "size_mean": 14.793296089385475,
+      "size_median": 5.0,
+      "size_max": 157,
+      "size_min": 1,
+      "singleton_fraction": 0.20670391061452514
+    },
+    "rank3": {
+      "n_cells": 32,
+      "size_mean": 31.5,
+      "size_median": 23.5,
+      "size_max": 122,
+      "size_min": 1,
+      "singleton_fraction": 0.03125
+    }
+  },
+  "R-B|fine": {
+    "granularity": "fine",
+    "rank_map": "R-B",
+    "n_narrators": 470,
+    "rank0": {
+      "n_cells": 470,
+      "size_mean": 1.0,
+      "size_median": 1.0,
+      "size_max": 1,
+      "size_min": 1,
+      "singleton_fraction": 1.0
+    },
+    "rank1": {
+      "n_cells": 13315,
+      "size_mean": 1.0569282763800225,
+      "size_median": 1.0,
+      "size_max": 4,
+      "size_min": 1,
+      "singleton_fraction": 0.9648516710476905
+    },
+    "rank2": {
+      "n_cells": 963,
+      "size_mean": 3.146417445482866,
+      "size_median": 1.0,
+      "size_max": 97,
+      "size_min": 1,
+      "singleton_fraction": 0.6542056074766355
+    },
+    "rank3": {
+      "n_cells": 32,
+      "size_mean": 31.5,
+      "size_median": 23.5,
+      "size_max": 122,
+      "size_min": 1,
+      "singleton_fraction": 0.03125
+    }
+  },
+  "R-C|coarse": {
+    "granularity": "coarse",
+    "rank_map": "R-C",
+    "n_narrators": 470,
+    "rank0": {
+      "n_cells": 470,
+      "size_mean": 1.0,
+      "size_median": 1.0,
+      "size_max": 1,
+      "size_min": 1,
+      "singleton_fraction": 1.0
+    },
+    "rank1": {
+      "n_cells": 13315,
+      "size_mean": 1.0569282763800225,
+      "size_median": 1.0,
+      "size_max": 4,
+      "size_min": 1,
+      "singleton_fraction": 0.9648516710476905
+    },
+    "rank2": {
+      "n_cells": 47,
+      "size_mean": 34.191489361702125,
+      "size_median": 11.0,
+      "size_max": 223,
+      "size_min": 1,
+      "singleton_fraction": 0.14893617021276595
+    },
+    "rank3": {
+      "n_cells": 74,
+      "size_mean": 16.243243243243242,
+      "size_median": 8.0,
+      "size_max": 100,
+      "size_min": 1,
+      "singleton_fraction": 0.14864864864864866
+    }
+  },
+  "R-C|mid": {
+    "granularity": "mid",
+    "rank_map": "R-C",
+    "n_narrators": 470,
+    "rank0": {
+      "n_cells": 470,
+      "size_mean": 1.0,
+      "size_median": 1.0,
+      "size_max": 1,
+      "size_min": 1,
+      "singleton_fraction": 1.0
+    },
+    "rank1": {
+      "n_cells": 13315,
+      "size_mean": 1.0569282763800225,
+      "size_median": 1.0,
+      "size_max": 4,
+      "size_min": 1,
+      "singleton_fraction": 0.9648516710476905
+    },
+    "rank2": {
+      "n_cells": 137,
+      "size_mean": 14.620437956204379,
+      "size_median": 5.0,
+      "size_max": 157,
+      "size_min": 1,
+      "singleton_fraction": 0.2116788321167883
+    },
+    "rank3": {
+      "n_cells": 74,
+      "size_mean": 20.972972972972972,
+      "size_median": 12.0,
+      "size_max": 100,
+      "size_min": 1,
+      "singleton_fraction": 0.12162162162162163
+    }
+  },
+  "R-C|fine": {
+    "granularity": "fine",
+    "rank_map": "R-C",
+    "n_narrators": 470,
+    "rank0": {
+      "n_cells": 470,
+      "size_mean": 1.0,
+      "size_median": 1.0,
+      "size_max": 1,
+      "size_min": 1,
+      "singleton_fraction": 1.0
+    },
+    "rank1": {
+      "n_cells": 13315,
+      "size_mean": 1.0569282763800225,
+      "size_median": 1.0,
+      "size_max": 4,
+      "size_min": 1,
+      "singleton_fraction": 0.9648516710476905
+    },
+    "rank2": {
+      "n_cells": 793,
+      "size_mean": 2.8991172761664563,
+      "size_median": 1.0,
+      "size_max": 46,
+      "size_min": 1,
+      "singleton_fraction": 0.6494325346784363
+    },
+    "rank3": {
+      "n_cells": 74,
+      "size_mean": 20.972972972972972,
+      "size_median": 12.0,
+      "size_max": 100,
+      "size_min": 1,
+      "singleton_fraction": 0.12162162162162163
+    }
+  }
+}

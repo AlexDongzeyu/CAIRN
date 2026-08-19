@@ -1,0 +1,515 @@
+{
+  "R-A|coarse": {
+    "spearman_rho": 0.3874289417102047,
+    "spearman_p": 0.0,
+    "premise_holds": true,
+    "cross_rank_pairs": 1574530,
+    "size_concordance_count": 1325751,
+    "size_concordance_rate": 0.8419979295408788,
+    "rank_inversion_count": 13114,
+    "rank_inversion_rate": 0.008328834636367678,
+    "tie_rate": 0.14967323582275346,
+    "rank2_vs_rank3": {
+      "n_pairs": 3360,
+      "inversion_rate": 0.5577380952380953,
+      "concordance_rate": 0.39732142857142855,
+      "tie_rate": 0.04494047619047619,
+      "spearman_rho": -0.13686355644014284
+    },
+    "extremes": {
+      "rank1": {
+        "largest": {
+          "label": "Terry Aratani - Fred Matsumura - Kenneth Okuma - Henry Bruno Yamada Segment 1",
+          "size": 4
+        },
+        "smallest": {
+          "label": "Gene Akutsu Segment 1",
+          "size": 1
+        }
+      },
+      "rank2": {
+        "largest": {
+          "label": "World War II -- Concentration camps",
+          "size": 192
+        },
+        "smallest": {
+          "label": "World War II -- Propaganda",
+          "size": 1
+        }
+      },
+      "rank3": {
+        "largest": {
+          "label": "World War II -- Pearl Harbor and aftermath -- Personal recollections",
+          "size": 157
+        },
+        "smallest": {
+          "label": "Community activities -- Weddings",
+          "size": 1
+        }
+      }
+    },
+    "largest_r2_over_smallest_r3": 192.0,
+    "max_size_ratio_within_rank": {
+      "rank1": 4.0,
+      "rank2": 192.0,
+      "rank3": 157.0
+    },
+    "n_cells": 13433
+  },
+  "R-A|mid": {
+    "spearman_rho": 0.4706389331998861,
+    "spearman_p": 0.0,
+    "premise_holds": true,
+    "cross_rank_pairs": 2819335,
+    "size_concordance_count": 2296263,
+    "size_concordance_rate": 0.814469724243483,
+    "rank_inversion_count": 27075,
+    "rank_inversion_rate": 0.009603328444473608,
+    "tie_rate": 0.17592694731204345,
+    "rank2_vs_rank3": {
+      "n_pairs": 9870,
+      "inversion_rate": 0.3711246200607903,
+      "concordance_rate": 0.5781155015197569,
+      "tie_rate": 0.05075987841945289,
+      "spearman_rho": 0.16945543864855817
+    },
+    "extremes": {
+      "rank1": {
+        "largest": {
+          "label": "Terry Aratani - Fred Matsumura - Kenneth Okuma - Henry Bruno Yamada Segment 1",
+          "size": 4
+        },
+        "smallest": {
+          "label": "Gene Akutsu Segment 1",
+          "size": 1
+        }
+      },
+      "rank2": {
+        "largest": {
+          "label": "World War II -- Mass removal (\"evacuation\") -- Preparation",
+          "size": 106
+        },
+        "smallest": {
+          "label": "Industry and employment -- Retail",
+          "size": 1
+        }
+      },
+      "rank3": {
+        "largest": {
+          "label": "World War II -- Pearl Harbor and aftermath -- Personal recollections",
+          "size": 157
+        },
+        "smallest": {
+          "label": "Community activities -- Weddings",
+          "size": 1
+        }
+      }
+    },
+    "largest_r2_over_smallest_r3": 106.0,
+    "max_size_ratio_within_rank": {
+      "rank1": 4.0,
+      "rank2": 106.0,
+      "rank3": 157.0
+    },
+    "n_cells": 13526
+  },
+  "R-A|fine": {
+    "spearman_rho": 0.3963941824785246,
+    "spearman_p": 0.0,
+    "premise_holds": true,
+    "cross_rank_pairs": 9471680,
+    "size_concordance_count": 4135704,
+    "size_concordance_rate": 0.43663890671982164,
+    "rank_inversion_count": 214509,
+    "rank_inversion_rate": 0.02264740785161661,
+    "tie_rate": 0.5407136854285618,
+    "rank2_vs_rank3": {
+      "n_pairs": 44660,
+      "inversion_rate": 0.1178011643528885,
+      "concordance_rate": 0.7854903716972682,
+      "tie_rate": 0.09670846394984325,
+      "spearman_rho": 0.380577789756501
+    },
+    "extremes": {
+      "rank1": {
+        "largest": {
+          "label": "Terry Aratani - Fred Matsumura - Kenneth Okuma - Henry Bruno Yamada Segment 1",
+          "size": 4
+        },
+        "smallest": {
+          "label": "Gene Akutsu Segment 1",
+          "size": 1
+        }
+      },
+      "rank2": {
+        "largest": {
+          "label": "World War II -- Temporary Assembly Centers -- Living conditions @ UNSPECIFIED",
+          "size": 97
+        },
+        "smallest": {
+          "label": "World War II -- Resistance and dissidence -- Draft resistance @ Idaho",
+          "size": 1
+        }
+      },
+      "rank3": {
+        "largest": {
+          "label": "World War II -- Pearl Harbor and aftermath -- Personal recollections",
+          "size": 157
+        },
+        "smallest": {
+          "label": "Community activities -- Weddings",
+          "size": 1
+        }
+      }
+    },
+    "largest_r2_over_smallest_r3": 97.0,
+    "max_size_ratio_within_rank": {
+      "rank1": 4.0,
+      "rank2": 97.0,
+      "rank3": 157.0
+    },
+    "n_cells": 14023
+  },
+  "R-B|coarse": {
+    "spearman_rho": 0.3443542711792858,
+    "spearman_p": 0.0,
+    "premise_holds": true,
+    "cross_rank_pairs": 1093430,
+    "size_concordance_count": 955268,
+    "size_concordance_rate": 0.8736434888378771,
+    "rank_inversion_count": 7207,
+    "rank_inversion_rate": 0.006591185535425222,
+    "tie_rate": 0.11976532562669764,
+    "rank2_vs_rank3": {
+      "n_pairs": 1600,
+      "inversion_rate": 0.544375,
+      "concordance_rate": 0.42625,
+      "tie_rate": 0.029375,
+      "spearman_rho": -0.09996836730697468
+    },
+    "extremes": {
+      "rank1": {
+        "largest": {
+          "label": "Terry Aratani - Fred Matsumura - Kenneth Okuma - Henry Bruno Yamada Segment 1",
+          "size": 4
+        },
+        "smallest": {
+          "label": "Gene Akutsu Segment 1",
+          "size": 1
+        }
+      },
+      "rank2": {
+        "largest": {
+          "label": "World War II -- Pearl Harbor and aftermath",
+          "size": 223
+        },
+        "smallest": {
+          "label": "World War II -- Propaganda",
+          "size": 1
+        }
+      },
+      "rank3": {
+        "largest": {
+          "label": "Community activities",
+          "size": 73
+        },
+        "smallest": {
+          "label": "Identity and values",
+          "size": 1
+        }
+      }
+    },
+    "largest_r2_over_smallest_r3": 223.0,
+    "max_size_ratio_within_rank": {
+      "rank1": 4.0,
+      "rank2": 223.0,
+      "rank3": 73.0
+    },
+    "n_cells": 13397
+  },
+  "R-B|mid": {
+    "spearman_rho": 0.4707038540051883,
+    "spearman_p": 0.0,
+    "premise_holds": true,
+    "cross_rank_pairs": 2815193,
+    "size_concordance_count": 2294853,
+    "size_concordance_rate": 0.8151672016803111,
+    "rank_inversion_count": 24743,
+    "rank_inversion_rate": 0.008789095454556757,
+    "tie_rate": 0.17604370286513216,
+    "rank2_vs_rank3": {
+      "n_pairs": 5728,
+      "inversion_rate": 0.2323673184357542,
+      "concordance_rate": 0.75,
+      "tie_rate": 0.01763268156424581,
+      "spearman_rho": 0.32282027909502364
+    },
+    "extremes": {
+      "rank1": {
+        "largest": {
+          "label": "Terry Aratani - Fred Matsumura - Kenneth Okuma - Henry Bruno Yamada Segment 1",
+          "size": 4
+        },
+        "smallest": {
+          "label": "Gene Akutsu Segment 1",
+          "size": 1
+        }
+      },
+      "rank2": {
+        "largest": {
+          "label": "World War II -- Pearl Harbor and aftermath -- Personal recollections",
+          "size": 157
+        },
+        "smallest": {
+          "label": "Industry and employment -- Retail",
+          "size": 1
+        }
+      },
+      "rank3": {
+        "largest": {
+          "label": "Identity and values",
+          "size": 122
+        },
+        "smallest": {
+          "label": "Vietnam War",
+          "size": 1
+        }
+      }
+    },
+    "largest_r2_over_smallest_r3": 157.0,
+    "max_size_ratio_within_rank": {
+      "rank1": 4.0,
+      "rank2": 157.0,
+      "rank3": 122.0
+    },
+    "n_cells": 13526
+  },
+  "R-B|fine": {
+    "spearman_rho": 0.3667015941576526,
+    "spearman_p": 0.0,
+    "premise_holds": true,
+    "cross_rank_pairs": 13279241,
+    "size_concordance_count": 4806856,
+    "size_concordance_rate": 0.3619827368145514,
+    "rank_inversion_count": 327809,
+    "rank_inversion_rate": 0.024685823534643284,
+    "tie_rate": 0.6133314396508054,
+    "rank2_vs_rank3": {
+      "n_pairs": 30816,
+      "inversion_rate": 0.04494418483904465,
+      "concordance_rate": 0.9298416407061267,
+      "tie_rate": 0.02521417445482866,
+      "spearman_rho": 0.3136767955968539
+    },
+    "extremes": {
+      "rank1": {
+        "largest": {
+          "label": "Terry Aratani - Fred Matsumura - Kenneth Okuma - Henry Bruno Yamada Segment 1",
+          "size": 4
+        },
+        "smallest": {
+          "label": "Gene Akutsu Segment 1",
+          "size": 1
+        }
+      },
+      "rank2": {
+        "largest": {
+          "label": "World War II -- Temporary Assembly Centers -- Living conditions @ UNSPECIFIED",
+          "size": 97
+        },
+        "smallest": {
+          "label": "World War II -- Resistance and dissidence -- Draft resistance @ Idaho",
+          "size": 1
+        }
+      },
+      "rank3": {
+        "largest": {
+          "label": "Identity and values",
+          "size": 122
+        },
+        "smallest": {
+          "label": "Vietnam War",
+          "size": 1
+        }
+      }
+    },
+    "largest_r2_over_smallest_r3": 97.0,
+    "max_size_ratio_within_rank": {
+      "rank1": 4.0,
+      "rank2": 97.0,
+      "rank3": 122.0
+    },
+    "n_cells": 14310
+  },
+  "R-C|coarse": {
+    "spearman_rho": 0.3932080521892333,
+    "spearman_p": 0.0,
+    "premise_holds": true,
+    "cross_rank_pairs": 1614593,
+    "size_concordance_count": 1365766,
+    "size_concordance_rate": 0.845888716227557,
+    "rank_inversion_count": 13159,
+    "rank_inversion_rate": 0.008150041527493306,
+    "tie_rate": 0.14596124224494966,
+    "rank2_vs_rank3": {
+      "n_pairs": 3478,
+      "inversion_rate": 0.5517538815411156,
+      "concordance_rate": 0.4039677975848189,
+      "tie_rate": 0.04427832087406555,
+      "spearman_rho": -0.12508019749592245
+    },
+    "extremes": {
+      "rank1": {
+        "largest": {
+          "label": "Terry Aratani - Fred Matsumura - Kenneth Okuma - Henry Bruno Yamada Segment 1",
+          "size": 4
+        },
+        "smallest": {
+          "label": "Gene Akutsu Segment 1",
+          "size": 1
+        }
+      },
+      "rank2": {
+        "largest": {
+          "label": "World War II -- Pearl Harbor and aftermath",
+          "size": 223
+        },
+        "smallest": {
+          "label": "World War II -- Propaganda",
+          "size": 1
+        }
+      },
+      "rank3": {
+        "largest": {
+          "label": "World War II -- Temporary Assembly Centers -- Living conditions",
+          "size": 100
+        },
+        "smallest": {
+          "label": "Community activities -- Weddings",
+          "size": 1
+        }
+      }
+    },
+    "largest_r2_over_smallest_r3": 223.0,
+    "max_size_ratio_within_rank": {
+      "rank1": 4.0,
+      "rank2": 223.0,
+      "rank3": 100.0
+    },
+    "n_cells": 13436
+  },
+  "R-C|mid": {
+    "spearman_rho": 0.47067279956704877,
+    "spearman_p": 0.0,
+    "premise_holds": true,
+    "cross_rank_pairs": 2819603,
+    "size_concordance_count": 2296542,
+    "size_concordance_rate": 0.8144912599397859,
+    "rank_inversion_count": 27065,
+    "rank_inversion_rate": 0.009598869060644354,
+    "tie_rate": 0.17590987099956978,
+    "rank2_vs_rank3": {
+      "n_pairs": 10138,
+      "inversion_rate": 0.36032748076543697,
+      "concordance_rate": 0.5903531268494772,
+      "tie_rate": 0.049319392385085814,
+      "spearman_rho": 0.19085268058422236
+    },
+    "extremes": {
+      "rank1": {
+        "largest": {
+          "label": "Terry Aratani - Fred Matsumura - Kenneth Okuma - Henry Bruno Yamada Segment 1",
+          "size": 4
+        },
+        "smallest": {
+          "label": "Gene Akutsu Segment 1",
+          "size": 1
+        }
+      },
+      "rank2": {
+        "largest": {
+          "label": "World War II -- Pearl Harbor and aftermath -- Personal recollections",
+          "size": 157
+        },
+        "smallest": {
+          "label": "Industry and employment -- Retail",
+          "size": 1
+        }
+      },
+      "rank3": {
+        "largest": {
+          "label": "World War II -- Temporary Assembly Centers -- Living conditions",
+          "size": 100
+        },
+        "smallest": {
+          "label": "Community activities -- Weddings",
+          "size": 1
+        }
+      }
+    },
+    "largest_r2_over_smallest_r3": 157.0,
+    "max_size_ratio_within_rank": {
+      "rank1": 4.0,
+      "rank2": 157.0,
+      "rank3": 100.0
+    },
+    "n_cells": 13526
+  },
+  "R-C|fine": {
+    "spearman_rho": 0.3810748569466135,
+    "spearman_p": 0.0,
+    "premise_holds": true,
+    "cross_rank_pairs": 11602787,
+    "size_concordance_count": 4553764,
+    "size_concordance_rate": 0.3924715673915241,
+    "rank_inversion_count": 278418,
+    "rank_inversion_rate": 0.023995786529563974,
+    "tie_rate": 0.5835326460789119,
+    "rank2_vs_rank3": {
+      "n_pairs": 58682,
+      "inversion_rate": 0.09801983572475376,
+      "concordance_rate": 0.8067720936573396,
+      "tie_rate": 0.09520807061790669,
+      "spearman_rho": 0.38903047545007974
+    },
+    "extremes": {
+      "rank1": {
+        "largest": {
+          "label": "Terry Aratani - Fred Matsumura - Kenneth Okuma - Henry Bruno Yamada Segment 1",
+          "size": 4
+        },
+        "smallest": {
+          "label": "Gene Akutsu Segment 1",
+          "size": 1
+        }
+      },
+      "rank2": {
+        "largest": {
+          "label": "World War II -- Concentration camps -- Impact of incarceration @ UNSPECIFIED",
+          "size": 46
+        },
+        "smallest": {
+          "label": "World War II -- Resistance and dissidence -- Draft resistance @ Idaho",
+          "size": 1
+        }
+      },
+      "rank3": {
+        "largest": {
+          "label": "World War II -- Temporary Assembly Centers -- Living conditions",
+          "size": 100
+        },
+        "smallest": {
+          "label": "Community activities -- Weddings",
+          "size": 1
+        }
+      }
+    },
+    "largest_r2_over_smallest_r3": 46.0,
+    "max_size_ratio_within_rank": {
+      "rank1": 4.0,
+      "rank2": 46.0,
+      "rank3": 100.0
+    },
+    "n_cells": 14182
+  }
+}

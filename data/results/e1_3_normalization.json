@@ -1,0 +1,18 @@
+{
+  "n_interviews": 519,
+  "n_turns_total": 220471,
+  "n_turns_with_archive_label": 171313,
+  "label_coverage": 0.77703189988706,
+  "turn_classification_accuracy": 0.8063953115058402,
+  "interviewer_precision": 0.923046899590809,
+  "interviewer_recall": 0.7304419735373824,
+  "confusion": {
+    "tp": 73313,
+    "fp": 6112,
+    "fn": 27055,
+    "tn": 64833
+  },
+  "pct_chars_removed_by_cleaning": 0.1322701562499241,
+  "mean_sentences_per_turn": 3.0520249828775667,
+  "note": "accuracy is measured against the archive's own speaker initials on every labelled turn, not on a 200-turn hand-labelled sample; the rules classifier never sees the initials"
+}

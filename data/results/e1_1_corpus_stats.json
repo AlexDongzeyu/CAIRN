@@ -1,0 +1,27 @@
+{
+  "n_interviews": 526,
+  "n_segments": 13315,
+  "n_narrators": 470,
+  "n_interviews_with_transcript": 519,
+  "segments_per_interview": {
+    "median": 23.0,
+    "iqr": [
+      18.0,
+      30.0
+    ],
+    "min": 4,
+    "max": 93
+  },
+  "transcript_chars": {
+    "median": 118059.0,
+    "iqr": [
+      89686.0,
+      151118.0
+    ]
+  },
+  "rights": {
+    "cc": 526
+  },
+  "segments_with_topics": 4600,
+  "segments_with_geography": 7830
+}

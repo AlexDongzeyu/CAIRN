@@ -1,0 +1,87 @@
+{
+  "first_contact_with_transfer_archive": "2026-08-17 21:52:24",
+  "collections": [
+    "ddr-densho-1007",
+    "ddr-densho-1010",
+    "ddr-densho-1014",
+    "ddr-densho-1011"
+  ],
+  "substitution_note": "PREREGISTRATION substitution_ledger E1_2: the transfer archive is a held-out Densho collection, so this is cross-collection rather than cross-institution transfer",
+  "transfer_corpus_stats": {
+    "n_interviews": 55,
+    "n_segments": 874,
+    "n_narrators": 57,
+    "n_interviews_with_transcript": 0,
+    "segments_per_interview": {
+      "median": 14.0,
+      "iqr": [
+        10.0,
+        22.0
+      ],
+      "min": 2,
+      "max": 45
+    },
+    "transcript_chars": {
+      "median": 0.0,
+      "iqr": [
+        0.0,
+        0.0
+      ]
+    },
+    "rights": {
+      "cc": 55
+    },
+    "segments_with_topics": 151,
+    "segments_with_geography": 615
+  },
+  "E10_1_meta_rank": {
+    "alpha_home": 0.03931319878031059,
+    "alpha_transfer": 0.06206896551724139,
+    "alpha_drop": -0.022755766736930805,
+    "raw_agreement_transfer": 0.5555555555555555,
+    "n_terms_transfer": 51,
+    "n_terms_unseen_in_primary": 1
+  },
+  "E10_2_zero_shot": {
+    "rank_cardinality": {
+      "spearman_rho": 0.45737750764761004,
+      "premise_holds": true,
+      "rank_inversion_rate": 0.3871453233588597
+    },
+    "n_rank2_cells": 32,
+    "singleton_fraction": 0.5625,
+    "attestation_mean": 2.53125,
+    "attestation_max": 9,
+    "model_means": {
+      "M5_ccnn": {
+        "T1_map": 0.3467324890297112,
+        "T2_auc": 0.43256198347107444
+      },
+      "M3_typed_star": {
+        "T1_map": 0.3558331349479553,
+        "T2_auc": 0.7389256198347108
+      }
+    }
+  },
+  "E10_3_conclusion_transfer": {
+    "interaction_home": {
+      "coef": -0.01962819638885323,
+      "ci": [
+        -0.025998570481735928,
+        -0.013257822295970537
+      ],
+      "direction": "negative"
+    },
+    "interaction_transfer": {
+      "coef": -0.08964367642033888,
+      "ci": [
+        -0.2565867134015952,
+        0.07729936056091746
+      ],
+      "direction": "indeterminate"
+    },
+    "conclusion_transfers": false,
+    "kill_criterion": "if the interaction CI crosses zero on the transfer archive while being clearly signed on the primary, the finding is archive-specific and must be reported that way",
+    "transfer_ci_crosses_zero": true
+  }
+}

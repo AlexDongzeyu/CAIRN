@@ -1,0 +1,15 @@
+{
+  "design_effect": {
+    "DEFF": 138.9501408370363,
+    "ICC": 0.16919330443727212,
+    "mbar": 816.3404255319149,
+    "n_clusters": 470,
+    "N": 383680.0
+  },
+  "clustered_bootstrap_accuracy_M5": {
+    "point": 0.517235717264387,
+    "lo": 0.498827110936375,
+    "hi": 0.535975874424488
+  },
+  "note": "sampling unit is the narrator; edge-level CIs would be narrower by ~sqrt(DEFF)"
+}

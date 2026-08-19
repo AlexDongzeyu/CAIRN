@@ -1,0 +1,32 @@
+{
+  "R-A|mid": {
+    "lossless": true,
+    "n_cells": 13996,
+    "n_star_nodes": 13996,
+    "n_star_edges": 23910,
+    "n_missing": 0,
+    "n_extra": 0,
+    "n_mismatched": 0,
+    "examples_mismatched": []
+  },
+  "R-B|mid": {
+    "lossless": true,
+    "n_cells": 13996,
+    "n_star_nodes": 13996,
+    "n_star_edges": 24631,
+    "n_missing": 0,
+    "n_extra": 0,
+    "n_mismatched": 0,
+    "examples_mismatched": []
+  },
+  "R-C|mid": {
+    "lossless": true,
+    "n_cells": 13996,
+    "n_star_nodes": 13996,
+    "n_star_edges": 24156,
+    "n_missing": 0,
+    "n_extra": 0,
+    "n_mismatched": 0,
+    "examples_mismatched": []
+  }
+}

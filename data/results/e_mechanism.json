@@ -1,0 +1,207 @@
+{
+  "labelled": "EXPLORATORY - run after the split result, to test a stated mechanism rather than a pre-registered hypothesis",
+  "probe": [
+    {
+      "split": "narrator-disjoint",
+      "model": "frozen_encoder_typed",
+      "probe_accuracy_mean": 1.0,
+      "probe_accuracy_std": 0.0,
+      "chance": 0.011157239231966787,
+      "n_classes": 440,
+      "n": 12846,
+      "n_seeds": 1,
+      "is_control": true
+    },
+    {
+      "split": "narrator-disjoint",
+      "model": "frozen_encoder_plain",
+      "probe_accuracy_mean": 1.0,
+      "probe_accuracy_std": 0.0,
+      "chance": 0.011157239231966787,
+      "n_classes": 440,
+      "n": 12846,
+      "n_seeds": 1,
+      "is_control": true
+    },
+    {
+      "split": "narrator-disjoint",
+      "model": "M3_typed_star",
+      "probe_accuracy_mean": 0.862324857291126,
+      "probe_accuracy_std": 0.036457468000016535,
+      "chance": 0.011157239231966787,
+      "n_classes": 440,
+      "n": 12846,
+      "n_seeds": 5
+    },
+    {
+      "split": "narrator-disjoint",
+      "model": "M5_ccnn",
+      "probe_accuracy_mean": 0.9016087182148418,
+      "probe_accuracy_std": 0.06403080308103168,
+      "chance": 0.011157239231966787,
+      "n_classes": 440,
+      "n": 12846,
+      "n_seeds": 5
+    },
+    {
+      "split": "random",
+      "model": "frozen_encoder_typed",
+      "probe_accuracy_mean": 1.0,
+      "probe_accuracy_std": 0.0,
+      "chance": 0.011157239231966787,
+      "n_classes": 440,
+      "n": 12846,
+      "n_seeds": 1,
+      "is_control": true
+    },
+    {
+      "split": "random",
+      "model": "frozen_encoder_plain",
+      "probe_accuracy_mean": 1.0,
+      "probe_accuracy_std": 0.0,
+      "chance": 0.011157239231966787,
+      "n_classes": 440,
+      "n": 12846,
+      "n_seeds": 1,
+      "is_control": true
+    },
+    {
+      "split": "random",
+      "model": "M3_typed_star",
+      "probe_accuracy_mean": 0.9199792423456149,
+      "probe_accuracy_std": 0.03656625940599873,
+      "chance": 0.011157239231966787,
+      "n_classes": 440,
+      "n": 12846,
+      "n_seeds": 5
+    },
+    {
+      "split": "random",
+      "model": "M5_ccnn",
+      "probe_accuracy_mean": 0.9501816294758691,
+      "probe_accuracy_std": 0.0028423588868975867,
+      "chance": 0.011157239231966787,
+      "n_classes": 440,
+      "n": 12846,
+      "n_seeds": 5
+    }
+  ],
+  "anonymised": [
+    {
+      "split": "narrator-disjoint",
+      "model": "M3_typed_star",
+      "condition": "narrator-anonymised",
+      "T1_map_mean": 0.22578186243932313,
+      "T1_map_std": 0.01236457065706675,
+      "T1_map_per_seed": [
+        0.23592331614830242,
+        0.2351528229891105,
+        0.20390785883433987,
+        0.2337629683876613,
+        0.22016234583720157
+      ],
+      "n_seeds": 5
+    },
+    {
+      "split": "narrator-disjoint",
+      "model": "M5_ccnn",
+      "condition": "narrator-anonymised",
+      "T1_map_mean": 0.06560758684114901,
+      "T1_map_std": 0.0018020027811628953,
+      "T1_map_per_seed": [
+        0.06515723321921808,
+        0.06347555859979398,
+        0.06663201953793754,
+        0.06423892992005069,
+        0.06853419292874477
+      ],
+      "n_seeds": 5
+    },
+    {
+      "split": "random",
+      "model": "M3_typed_star",
+      "condition": "narrator-anonymised",
+      "T1_map_mean": 0.06085024911920228,
+      "T1_map_std": 0.02272961314949038,
+      "T1_map_per_seed": [
+        0.07103266835669057,
+        0.037513165457998605,
+        0.08881206050381589,
+        0.030606067746011854,
+        0.07628728353149446
+      ],
+      "n_seeds": 5
+    },
+    {
+      "split": "random",
+      "model": "M5_ccnn",
+      "condition": "narrator-anonymised",
+      "T1_map_mean": 0.060012117433376956,
+      "T1_map_std": 0.0018650176692615785,
+      "T1_map_per_seed": [
+        0.06055198989797779,
+        0.06324331905907496,
+        0.05974012048134554,
+        0.05874402229687811,
+        0.05778113543160835
+      ],
+      "n_seeds": 5
+    }
+  ],
+  "split_gap": {
+    "M3_typed_star": {
+      "gap_real_narrators": -0.033128612312013875,
+      "gap_anonymised": -0.16493161332012085,
+      "gap_reduction": 0.131803001008107,
+      "gap_reduction_frac": -3.978524659190433,
+      "gap_real_ci": {
+        "point": -0.033128612312013875,
+        "lo": -0.05305449485115661,
+        "hi": -0.01362493571474493,
+        "n_seeds": 10
+      },
+      "gap_anon_ci": {
+        "point": -0.16493161332012085,
+        "lo": -0.1880587225468465,
+        "hi": -0.14290354723612111,
+        "n_seeds": 5
+      },
+      "baseline": {
+        "narrator-disjoint": 0.1386807903907731,
+        "random": 0.10555217807875923,
+        "event-disjoint": 0.032799704899210226
+      },
+      "anonymised": {
+        "narrator-disjoint": 0.22578186243932313,
+        "random": 0.06085024911920228
+      }
+    },
+    "M5_ccnn": {
+      "gap_real_narrators": 0.2903774565979512,
+      "gap_anonymised": -0.005595469407772051,
+      "gap_reduction": 0.2959729260057233,
+      "gap_reduction_frac": 1.0192696412225946,
+      "gap_real_ci": {
+        "point": 0.2903774565979512,
+        "lo": 0.26258014595607343,
+        "hi": 0.3223293533459396,
+        "n_seeds": 10
+      },
+      "gap_anon_ci": {
+        "point": -0.005595469407772051,
+        "lo": -0.007827842395520965,
+        "hi": -0.00326411631181886,
+        "n_seeds": 5
+      },
+      "baseline": {
+        "narrator-disjoint": 0.09791905041106921,
+        "random": 0.38829650700902046,
+        "event-disjoint": 0.1520309709958069
+      },
+      "anonymised": {
+        "narrator-disjoint": 0.06560758684114901,
+        "random": 0.060012117433376956
+      }
+    }
+  }
+}

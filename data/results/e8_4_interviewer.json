@@ -1,0 +1,8 @@
+{
+  "singleton_fraction_narrators_only": 0.20567375886524822,
+  "singleton_fraction_with_interviewers": 0.0,
+  "triage_rbo50": 0.8823402068625472,
+  "n_rank2_narrators_only": 141,
+  "n_rank2_with_interviewers": 141,
+  "note": "interviewer prompts are archive artifacts, not witness attestations; including them quantifies the archival-protocol confound directly"
+}

@@ -1,0 +1,25 @@
+{
+  "n_segments": 4538,
+  "n_segments_full": 13315,
+  "n_terms_excluded": 21,
+  "n_rank2_cells": 127,
+  "model_means": {
+    "M1_dense": {
+      "T1_map": 0.1316027636240044,
+      "T2_auc": 0.7962214706696729
+    },
+    "M0_mlp": {
+      "T1_map": 0.019583895947028425,
+      "T2_auc": 0.5610825817807841
+    },
+    "M3_typed_star": {
+      "T1_map": 0.1266283576125468,
+      "T2_auc": 0.8070737905937266
+    },
+    "M5_ccnn": {
+      "T1_map": 0.09081823065740993,
+      "T2_auc": 0.5239759602072703
+    }
+  },
+  "interpretation": "upper bound achievable when the contested labels are removed; compare against the primary cell to separate method failure from labelling noise"
+}

@@ -1,0 +1,200 @@
+{
+  "n_terms": 211,
+  "n_round1_terms": 99,
+  "n_round2_terms": 112,
+  "alpha_round1": {
+    "overall": 0.07260155574762317,
+    "head": 0.1631878557874764,
+    "middle": 0.07444444444444454,
+    "tail": -0.019909502262443368,
+    "rare_1_2": -0.07804878048780473,
+    "pair::A1_structural|A2_lexical": -0.004976981460744101,
+    "pair::A1_structural|A3_distributional": -0.04663518299881941,
+    "pair::A2_lexical|A3_distributional": 0.17537834066759683
+  },
+  "alpha_round2_REPORTED": {
+    "overall": 0.03931319878031059,
+    "head": 0.05859117840684658,
+    "middle": 0.03703703703703709,
+    "tail": 0.03693181818181812,
+    "rare_1_2": 0.07008547008547017,
+    "pair::A1_structural|A2_lexical": -0.02902928097994817,
+    "pair::A1_structural|A3_distributional": 0.035675675675675644,
+    "pair::A2_lexical|A3_distributional": 0.012718345005232279
+  },
+  "diagnostics_round1": {
+    "n_items": 99,
+    "unanimous_fraction": 0.41414141414141414,
+    "pairwise_raw_agreement": {
+      "A1_structural|A2_lexical": 0.5858585858585859,
+      "A1_structural|A3_distributional": 0.6363636363636364,
+      "A2_lexical|A3_distributional": 0.6060606060606061
+    },
+    "mean_pairwise_raw_agreement": 0.6094276094276094,
+    "marginals": {
+      "A1_structural": {
+        "2": 0.8787878787878788,
+        "3": 0.12121212121212122
+      },
+      "A2_lexical": {
+        "2": 0.5454545454545454,
+        "3": 0.45454545454545453
+      },
+      "A3_distributional": {
+        "2": 0.6767676767676768,
+        "3": 0.32323232323232326
+      }
+    },
+    "fleiss_kappa": 0.06946845289541913,
+    "gwet_ac1": 0.32691218130311617,
+    "max_marginal_skew": 0.7575757575757576,
+    "paradox_suspected": false
+  },
+  "diagnostics_round2": {
+    "n_items": 112,
+    "unanimous_fraction": 0.29464285714285715,
+    "pairwise_raw_agreement": {
+      "A1_structural|A2_lexical": 0.5089285714285714,
+      "A1_structural|A3_distributional": 0.5714285714285714,
+      "A2_lexical|A3_distributional": 0.5089285714285714
+    },
+    "mean_pairwise_raw_agreement": 0.5297619047619048,
+    "marginals": {
+      "A1_structural": {
+        "2": 0.8303571428571429,
+        "3": 0.16964285714285715
+      },
+      "A2_lexical": {
+        "2": 0.39285714285714285,
+        "3": 0.6071428571428571
+      },
+      "A3_distributional": {
+        "2": 0.5089285714285714,
+        "3": 0.49107142857142855
+      }
+    },
+    "fleiss_kappa": 0.03644547698562522,
+    "gwet_ac1": 0.08152249134948107,
+    "max_marginal_skew": 0.6607142857142858,
+    "paradox_suspected": false
+  },
+  "adjudication_revision_log": [
+    "A1: Round 1 derived the topic tree from terms observed in this sample, so a top-level facet with no sampled children was read as a terminal occurrence. Round 2 treats depth-1 facets as programme headings (Q3) regardless of sampled children. This corrects a sample/archive confusion, not a threshold.",
+    "A2: 39 terms moved to the Q3 programme list and 25 to the Q2 site list, each a Round-1 disagreement the manual's own Q2/Q3 wording already decides (e.g. 'Discrimination' is a recurring condition; 'Korematsu' is a specific case).",
+    "A3: Round-1 prototypes described subject matter, so thematic terms attached to the rank-2 side. Round 2 adds prototypes contrasting 'has a boundary and a date a co-witness could confirm' against 'abstract heading filing many events'.",
+    "All three annotators were aligned onto the manual's shared Q2/Q3/Q4 ordering; in Round 1 each annotator used its own resolution rule."
+  ],
+  "n_disputed": 146,
+  "disputed_top20": [
+    "World War II -- Pearl Harbor and aftermath -- Personal recollections",
+    "Race and racism -- Discrimination",
+    "World War II -- Temporary Assembly Centers -- Living conditions",
+    "Race and racism -- Cross-racial relations",
+    "World War II -- Concentration camps -- Living conditions",
+    "World War II -- Administration -- Registration and the \"loyalty questionnaire\"",
+    "Identity and values -- Japanese American identity",
+    "Redress and reparations -- Mobilizing and organizing the community",
+    "World War II -- Pearl Harbor and aftermath -- Responses of non-Japanese Americans",
+    "Identity and values -- Kibei",
+    "World War II -- Resistance and dissidence -- Segregation and Tule Lake",
+    "Immigration and citizenship -- Life in Japan and reasons for leaving",
+    "World War II -- Concentration camps -- Education",
+    "Redress and reparations -- Legal cases/coram nobis cases",
+    "World War II -- Concentration camps -- Conflicts, intimidation, and violence",
+    "World War II -- Military service -- Military Intelligence Service",
+    "Geographic communities -- Hawai'i",
+    "Industry and employment -- Fishing and canneries",
+    "Identity and values -- Issei",
+    "Community activities -- Associations and organizations -- The Japanese American Citizens League"
+  ],
+  "confusion_A1_A2": {
+    "3->3": 26,
+    "2->3": 100,
+    "2->2": 79,
+    "3->2": 6
+  },
+  "confusion_A1_A3": {
+    "3->3": 17,
+    "2->3": 73,
+    "2->2": 106,
+    "3->2": 15
+  },
+  "confusion_A2_A3": {
+    "3->3": 59,
+    "3->2": 67,
+    "2->3": 31,
+    "2->2": 54
+  },
+  "disagreement_taxonomy": {
+    "aspect-of-site vs standalone theme": {
+      "n": 7,
+      "examples": [
+        "World War II -- Pearl Harbor and aftermath -- Personal recollections",
+        "World War II -- Temporary Assembly Centers -- Living conditions",
+        "World War II -- Concentration camps -- Living conditions",
+        "Immigration and citizenship -- Life in Japan and reasons for leaving",
+        "Redress and reparations -- Impact of redress movement"
+      ]
+    },
+    "tree-position vs term-semantics conflict": {
+      "n": 128,
+      "examples": [
+        "Race and racism -- Discrimination",
+        "Race and racism -- Cross-racial relations",
+        "World War II -- Administration -- Registration and the \"loyalty questionnaire\"",
+        "Identity and values -- Japanese American identity",
+        "Redress and reparations -- Mobilizing and organizing the community"
+      ]
+    },
+    "facility vs programme ambiguity": {
+      "n": 5,
+      "examples": [
+        "World War II -- Military service -- Military Intelligence Service",
+        "Industry and employment -- Hotel industry",
+        "Japanese Latin Americans -- Deportation and internment during World War II",
+        "Japanese Canadians -- Incarceration during World War II",
+        "World War II -- Immigration detention centers"
+      ]
+    },
+    "bare facet used as a leaf": {
+      "n": 6,
+      "examples": [
+        "Reflections on the past",
+        "Redress and reparations",
+        "Japanese Canadians",
+        "Military service",
+        "Arts and literature"
+      ]
+    }
+  },
+  "stratum_sizes": {
+    "head": 70,
+    "middle": 70,
+    "tail": 71,
+    "rare_1_2": 45
+  },
+  "label_distribution": {
+    "A1_structural": {
+      "2": 179,
+      "3": 32
+    },
+    "A2_lexical": {
+      "2": 85,
+      "3": 126
+    },
+    "A3_distributional": {
+      "2": 121,
+      "3": 90
+    }
+  },
+  "kill_criterion": {
+    "threshold": 0.55,
+    "observed_round2_alpha": 0.03931319878031059,
+    "passes": false,
+    "H1_target": 0.67,
+    "meets_H1": false,
+    "raw_agreement_round2": 0.5297619047619048,
+    "gwet_ac1_round2": 0.08152249134948107,
+    "paradox_suspected": false
+  }
+}

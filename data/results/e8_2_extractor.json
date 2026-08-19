@@ -1,0 +1,9 @@
+{
+  "pairwise_rbo50": {
+    "S1_leaf_terms|S2_merged_parents": 0.5368260486764848,
+    "S1_leaf_terms|S3_place_split": 0.3170607135823071,
+    "S2_merged_parents|S3_place_split": 0.2509278786218596
+  },
+  "min": 0.2509278786218596,
+  "note": "if three defensible extractors give unrelated triage lists that is a first-order finding and belongs in the abstract"
+}

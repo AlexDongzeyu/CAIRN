@@ -1,0 +1,33 @@
+{
+  "n_pool_values": 12856,
+  "total_checked": 208,
+  "total_unmatched": 16,
+  "per_document": {
+    "findings.md": {
+      "checked": 74,
+      "unmatched": [
+        "95892",
+        "11696",
+        "1.26",
+        "3.14"
+      ]
+    },
+    "research-log.md": {
+      "checked": 134,
+      "unmatched": [
+        "3.14",
+        "2.11",
+        "5060",
+        "1.26",
+        "1996",
+        "7989",
+        "95892",
+        "637989",
+        "564",
+        "7989",
+        "0.0331",
+        "0.1551"
+      ]
+    }
+  }
+}

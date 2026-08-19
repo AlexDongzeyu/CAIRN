@@ -1,0 +1,405 @@
+{
+  "per_granularity": {
+    "coarse": {
+      "n_rank2_cells": 48,
+      "attestation": {
+        "mean": 32.291666666666664,
+        "median": 11.5,
+        "max": 192,
+        "p90": 94.40000000000008,
+        "hist": {
+          "1": 7,
+          "2-3": 4,
+          "4-10": 12,
+          "11-50": 14,
+          ">50": 11
+        }
+      },
+      "singleton_fraction": {
+        "point": 0.14583333333333334,
+        "lo": 0.0869140377326634,
+        "hi": 0.20475262893400328,
+        "se": 0.030060865102382622,
+        "m": 297,
+        "n": 470,
+        "method": "cluster subsampling (m-out-of-n without replacement, sqrt(m/n) scaled)"
+      },
+      "cells_per_rank": {
+        "rank0": 470,
+        "rank1": 13315,
+        "rank2": 48,
+        "rank3": 70
+      }
+    },
+    "mid": {
+      "n_rank2_cells": 141,
+      "attestation": {
+        "mean": 13.921985815602836,
+        "median": 6.0,
+        "max": 106,
+        "p90": 37.0,
+        "hist": {
+          "1": 29,
+          "2-3": 22,
+          "4-10": 39,
+          "11-50": 42,
+          ">50": 9
+        }
+      },
+      "singleton_fraction": {
+        "point": 0.20567375886524822,
+        "lo": 0.16477108067411886,
+        "hi": 0.24657643705637758,
+        "se": 0.020868713362821107,
+        "m": 297,
+        "n": 470,
+        "method": "cluster subsampling (m-out-of-n without replacement, sqrt(m/n) scaled)"
+      },
+      "cells_per_rank": {
+        "rank0": 470,
+        "rank1": 13315,
+        "rank2": 141,
+        "rank3": 70
+      }
+    },
+    "fine": {
+      "n_rank2_cells": 638,
+      "attestation": {
+        "mean": 3.5078369905956115,
+        "median": 1.0,
+        "max": 97,
+        "p90": 7.0,
+        "hist": {
+          "1": 387,
+          "2-3": 124,
+          "4-10": 88,
+          "11-50": 36,
+          ">50": 3
+        }
+      },
+      "singleton_fraction": {
+        "point": 0.6065830721003135,
+        "lo": 0.5784903294577135,
+        "hi": 0.6346758147429135,
+        "se": 0.014333031960510204,
+        "m": 297,
+        "n": 470,
+        "method": "cluster subsampling (m-out-of-n without replacement, sqrt(m/n) scaled)"
+      },
+      "cells_per_rank": {
+        "rank0": 470,
+        "rank1": 13315,
+        "rank2": 638,
+        "rank3": 70
+      }
+    }
+  },
+  "rbo_raw_labels": {
+    "p=0.8": {
+      "coarse|mid": 0.0,
+      "coarse|fine": 0.0,
+      "mid|fine": 0.0
+    },
+    "p=0.9": {
+      "coarse|mid": 0.0,
+      "coarse|fine": 0.0,
+      "mid|fine": 0.0
+    },
+    "p=0.95": {
+      "coarse|mid": 0.0,
+      "coarse|fine": 0.0,
+      "mid|fine": 0.0
+    }
+  },
+  "rbo_referent": {
+    "p=0.8": {
+      "coarse|mid": 0.5998598663632985,
+      "coarse|fine": 0.1981999981485054,
+      "mid|fine": 0.27334153687493234
+    },
+    "p=0.9": {
+      "coarse|mid": 0.5368260486764848,
+      "coarse|fine": 0.2509278786218596,
+      "mid|fine": 0.3170607135823071
+    },
+    "p=0.95": {
+      "coarse|mid": 0.49843771318072133,
+      "coarse|fine": 0.25469698002582797,
+      "mid|fine": 0.3039005184379397
+    }
+  },
+  "jaccard_referent": {
+    "@10": {
+      "coarse|mid": 0.25,
+      "coarse|fine": 0.25,
+      "mid|fine": 0.3333333333333333
+    },
+    "@25": {
+      "coarse|mid": 0.35135135135135137,
+      "coarse|fine": 0.2,
+      "mid|fine": 0.16129032258064516
+    },
+    "@50": {
+      "coarse|mid": 0.32653061224489793,
+      "coarse|fine": 0.16279069767441862,
+      "mid|fine": 0.1935483870967742
+    }
+  },
+  "triage_lists_raw": {
+    "coarse": [
+      "Arts and literature -- Performing arts -- Film",
+      "Community activities -- Festivals, celebrations, and holidays",
+      "Geographic communities -- California",
+      "World War II -- Concentration camps -- Conflicts, intimidation, and violence",
+      "World War II -- Military service -- Military Intelligence Service",
+      "World War II -- Propaganda",
+      "World War II -- Resistance and dissidence -- Segregation and Tule Lake",
+      "Arts and literature -- Performing arts -- Music",
+      "Arts and literature -- Visual arts",
+      "Japanese Canadians",
+      "World War II -- Concentration camps -- Publications",
+      "Arts and literature -- Literary arts",
+      "Community activities -- Recreational activities",
+      "Immigration and citizenship -- Law and legislation",
+      "Japanese Latin Americans",
+      "Activism and involvement",
+      "Geographic communities -- Washington",
+      "Journalism and media -- Community publications",
+      "World War II -- Leaving camp -- Work leave",
+      "Industry and employment -- Small business",
+      "Community activities -- Sports",
+      "Arts and literature -- Performing arts",
+      "Redress and reparations -- Commission on Wartime Relocation and Internment of Civilians (CWRIC) -- Hearings",
+      "World War II -- Resistance and dissidence -- Supreme Court cases",
+      "Industry and employment -- Agriculture",
+      "Religion and churches",
+      "Japan",
+      "Community activities",
+      "World War II -- Non-incarcerated Japanese Americans",
+      "Geographic communities",
+      "Military service",
+      "Redress and reparations -- Commission on Wartime Relocation and Internment of Civilians (CWRIC)",
+      "Identity and values",
+      "Community activities -- Associations and organizations",
+      "Reflections on the past",
+      "Redress and reparations",
+      "World War II -- Military service",
+      "World War II",
+      "Industry and employment",
+      "Education",
+      "World War II -- Resistance and dissidence",
+      "World War II -- Administration",
+      "Immigration and citizenship",
+      "World War II -- Pearl Harbor and aftermath",
+      "World War II -- Temporary Assembly Centers",
+      "World War II -- Mass removal (\"evacuation\")",
+      "World War II -- Leaving camp",
+      "World War II -- Concentration camps"
+    ],
+    "mid": [
+      "Arts and literature -- Performing arts -- Film -- Documentaries",
+      "Arts and literature -- Visual arts -- Pottery",
+      "Community activities -- Festivals, celebrations, and holidays -- New Year festival",
+      "Community activities -- Recreational activities -- Mushroom picking",
+      "Community activities -- Sports -- Bowling",
+      "Geographic communities -- California -- San Francisco",
+      "Geographic communities -- Washington -- Bainbridge Island",
+      "Geographic communities -- Washington -- Bellevue",
+      "Industry and employment -- Agriculture -- Greenhouses",
+      "Industry and employment -- Law",
+      "Industry and employment -- Retail",
+      "Industry and employment -- Small business -- General stores",
+      "Industry and employment -- Small business -- Laundromats",
+      "Industry and employment -- Small business -- Restaurants",
+      "Japan -- Government and politics",
+      "Japan -- Military",
+      "Military service -- Post-World War II service",
+      "World War II -- Concentration camps -- Conflicts, intimidation, and violence -- Manzanar riot/uprising",
+      "World War II -- Concentration camps -- Publications -- Granada Pioneer",
+      "World War II -- Concentration camps -- Publications -- Heart Mountain Sentinel",
+      "World War II -- Mass removal (\"evacuation\") -- Aftermath",
+      "World War II -- Military service -- 100th Infantry Battalion",
+      "World War II -- Military service -- 1800th Engineer General Service Battalion",
+      "World War II -- Military service -- Military Intelligence Service -- Merrill's Marauders",
+      "World War II -- Military service -- Office of Strategic Services",
+      "World War II -- Propaganda -- U.S. government propaganda",
+      "World War II -- Resistance and dissidence -- Segregation and Tule Lake -- Hoshidan",
+      "World War II -- Temporary Assembly Centers -- Education",
+      "World War II -- Temporary Assembly Centers -- Impacts of incarceration",
+      "Arts and literature -- Performing arts -- Music -- Taiko",
+      "Arts and literature -- Visual arts -- Painting",
+      "Community activities -- Sports -- Baseball",
+      "Community activities -- Sports -- Judo",
+      "Industry and employment -- Agriculture -- Flower growers",
+      "Industry and employment -- Agriculture -- Strawberries",
+      "Industry and employment -- Aviation",
+      "Japanese Canadians -- Incarceration during World War II",
+      "Japanese Latin Americans -- Deportation and internment during World War II",
+      "Japanese Latin Americans -- Redress and reparations",
+      "World War II -- Concentration camps -- Arts and literature",
+      "World War II -- Concentration camps -- Sports",
+      "World War II -- Military service -- U.S. Counterintelligence Corps",
+      "World War II -- Military service -- Women's Army Corps/Women's Army Auxiliary Corps",
+      "World War II -- Temporary Assembly Centers -- Conflicts, intimidation, and violence",
+      "World War II -- U.S. federal prisons",
+      "Community activities -- Associations and organizations -- Student clubs",
+      "Community activities -- Recreational activities -- Picnics",
+      "Geographic communities -- Washington -- Seattle",
+      "Industry and employment -- Small business -- Grocery stores",
+      "World War II -- Temporary Assembly Centers -- Facilities, services, and camp administration"
+    ],
+    "fine": [
+      "Activism and involvement -- Protests, rallies, or marches @ Fort Sill, Oklahoma",
+      "Activism and involvement -- Protests, rallies, or marches @ Georgia",
+      "Activism and involvement -- Protests, rallies, or marches @ Texas",
+      "Arts and literature -- Literary arts -- Poetry @ California",
+      "Arts and literature -- Literary arts -- Poetry @ Los Angeles, California",
+      "Arts and literature -- Performing arts -- Dance @ Kent, Washington",
+      "Arts and literature -- Performing arts -- Dance @ Los Angeles, California",
+      "Arts and literature -- Performing arts -- Dance @ Portland, Oregon",
+      "Arts and literature -- Performing arts -- Dance @ Seattle, Washington",
+      "Arts and literature -- Performing arts -- Dance @ UNSPECIFIED",
+      "Arts and literature -- Performing arts -- Dance @ Wapato, Washington",
+      "Arts and literature -- Performing arts -- Film -- Documentaries @ UNSPECIFIED",
+      "Arts and literature -- Performing arts -- Music -- Taiko @ Portland, Oregon",
+      "Arts and literature -- Performing arts -- Music -- Taiko @ Seattle, Washington",
+      "Arts and literature -- Performing arts -- Music -- Taiko @ UNSPECIFIED",
+      "Arts and literature -- Performing arts -- Theater @ California",
+      "Arts and literature -- Performing arts -- Theater @ San Francisco, California",
+      "Arts and literature -- Performing arts -- Theater @ UNSPECIFIED",
+      "Arts and literature -- Visual arts -- Painting @ Fresno, California",
+      "Arts and literature -- Visual arts -- Painting @ Torrance, California",
+      "Arts and literature -- Visual arts -- Painting @ UNSPECIFIED",
+      "Arts and literature -- Visual arts -- Pottery @ Fresno, California",
+      "Community activities -- Associations and organizations -- Boy Scouts and Girl Scouts of America @ Boyle Heights, California",
+      "Community activities -- Associations and organizations -- Boy Scouts and Girl Scouts of America @ Gardena, California",
+      "Community activities -- Associations and organizations -- Boy Scouts and Girl Scouts of America @ Spokane, Washington",
+      "Community activities -- Associations and organizations -- Economic associations @ Los Angeles, California",
+      "Community activities -- Associations and organizations -- Kenjinkai @ Loomis, California",
+      "Community activities -- Associations and organizations -- Kenjinkai @ Mount Eden, California",
+      "Community activities -- Associations and organizations -- Kenjinkai @ Salinas, California",
+      "Community activities -- Associations and organizations -- Kenjinkai @ Spokane, Washington",
+      "Community activities -- Festivals, celebrations, and holidays -- New Year festival @ UNSPECIFIED",
+      "Community activities -- Nihonmachi (\"Japantowns\") @ Denver, Colorado",
+      "Community activities -- Nihonmachi (\"Japantowns\") @ South Park, Washington",
+      "Community activities -- Nihonmachi (\"Japantowns\") @ Yakima, Washington",
+      "Community activities -- Recreational activities -- Mushroom picking @ UNSPECIFIED",
+      "Community activities -- Recreational activities -- Picnics @ Bainbridge Island, Washington",
+      "Community activities -- Recreational activities -- Picnics @ Loomis, California",
+      "Community activities -- Recreational activities -- Picnics @ Mount Eden, California",
+      "Community activities -- Sports -- Baseball @ Los Angeles, California",
+      "Community activities -- Sports -- Baseball @ Steveston, BC, Canada",
+      "Community activities -- Sports -- Basketball @ Los Angeles, California",
+      "Community activities -- Sports -- Bowling @ Los Angeles, California",
+      "Community activities -- Sports -- Judo @ Japan",
+      "Community activities -- Sports -- Judo @ Los Angeles, California",
+      "Education -- Church-run schools @ Boyle Heights, California",
+      "Education -- Higher education @ Amherst, Massachusetts",
+      "Education -- Higher education @ Berkeley, California",
+      "Education -- Higher education @ Ellensburg, Washington",
+      "Education -- Higher education @ Long Beach, California",
+      "Education -- Higher education @ Pasadena, California"
+    ]
+  },
+  "triage_lists_referent": {
+    "coarse": [
+      "Arts and literature -- Performing arts",
+      "Community activities -- Festivals, celebrations, and holidays",
+      "Geographic communities -- California",
+      "World War II -- Concentration camps",
+      "World War II -- Military service",
+      "World War II -- Propaganda",
+      "World War II -- Resistance and dissidence",
+      "Arts and literature -- Visual arts",
+      "Japanese Canadians",
+      "Arts and literature -- Literary arts",
+      "Community activities -- Recreational activities",
+      "Immigration and citizenship -- Law and legislation",
+      "Japanese Latin Americans",
+      "Activism and involvement",
+      "Geographic communities -- Washington",
+      "Journalism and media -- Community publications",
+      "World War II -- Leaving camp",
+      "Industry and employment -- Small business",
+      "Community activities -- Sports",
+      "Redress and reparations -- Commission on Wartime Relocation and Internment of Civilians (CWRIC)",
+      "Industry and employment -- Agriculture",
+      "Religion and churches",
+      "Japan",
+      "Community activities",
+      "World War II -- Non-incarcerated Japanese Americans",
+      "Geographic communities",
+      "Military service",
+      "Identity and values",
+      "Community activities -- Associations and organizations",
+      "Reflections on the past",
+      "Redress and reparations",
+      "World War II",
+      "Industry and employment",
+      "Education",
+      "World War II -- Administration",
+      "Immigration and citizenship",
+      "World War II -- Pearl Harbor and aftermath",
+      "World War II -- Temporary Assembly Centers",
+      "World War II -- Mass removal (\"evacuation\")"
+    ],
+    "mid": [
+      "Arts and literature -- Performing arts",
+      "Arts and literature -- Visual arts",
+      "Community activities -- Festivals, celebrations, and holidays",
+      "Community activities -- Recreational activities",
+      "Community activities -- Sports",
+      "Geographic communities -- California",
+      "Geographic communities -- Washington",
+      "Industry and employment -- Agriculture",
+      "Industry and employment -- Law",
+      "Industry and employment -- Retail",
+      "Industry and employment -- Small business",
+      "Japan -- Government and politics",
+      "Japan -- Military",
+      "Military service -- Post-World War II service",
+      "World War II -- Concentration camps",
+      "World War II -- Mass removal (\"evacuation\")",
+      "World War II -- Military service",
+      "World War II -- Propaganda",
+      "World War II -- Resistance and dissidence",
+      "World War II -- Temporary Assembly Centers",
+      "Industry and employment -- Aviation",
+      "Japanese Canadians -- Incarceration during World War II",
+      "Japanese Latin Americans -- Deportation and internment during World War II",
+      "Japanese Latin Americans -- Redress and reparations",
+      "World War II -- U.S. federal prisons",
+      "Community activities -- Associations and organizations"
+    ],
+    "fine": [
+      "Activism and involvement -- Protests, rallies, or marches",
+      "Arts and literature -- Literary arts",
+      "Arts and literature -- Performing arts",
+      "Arts and literature -- Visual arts",
+      "Community activities -- Associations and organizations",
+      "Community activities -- Festivals, celebrations, and holidays",
+      "Community activities -- Nihonmachi (\"Japantowns\")",
+      "Community activities -- Recreational activities",
+      "Community activities -- Sports",
+      "Education -- Church-run schools",
+      "Education -- Higher education"
+    ]
+  },
+  "why_projection": "Raw cell labels are disjoint across granularities by construction (coarse keys are parent paths, fine keys carry a place suffix), so raw-label RBO is identically zero and measures the labelling scheme rather than the triage. The pre-registered criterion is therefore evaluated on lists projected onto the shared archival referent (depth-2 topic path). Both are reported.",
+  "kill_criterion": {
+    "threshold": 0.6,
+    "rbo_referent_p0.9": {
+      "coarse|mid": 0.5368260486764848,
+      "coarse|fine": 0.2509278786218596,
+      "mid|fine": 0.3170607135823071
+    },
+    "rbo_raw_p0.9": {
+      "coarse|mid": 0.0,
+      "coarse|fine": 0.0,
+      "mid|fine": 0.0
+    },
+    "min_pair": 0.2509278786218596,
+    "all_pairs_below_threshold": true,
+    "H3_granularity_leg_met": false
+  }
+}

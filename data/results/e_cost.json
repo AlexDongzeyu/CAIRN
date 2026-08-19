@@ -1,0 +1,27 @@
+{
+ "device": "cuda",
+ "n_segments": 13315,
+ "n_narrators": 470,
+ "build_complex": {
+  "seconds": 0.23,
+  "peak_mib": 10.6
+ },
+ "support_audit_rank1": {
+  "seconds": 0.0,
+  "peak_mib": 0.3
+ },
+ "feature_construction": {
+  "seconds": 0.66,
+  "peak_mib": 42.3
+ },
+ "star_expansion": {
+  "seconds": 0.2,
+  "peak_mib": 1.6
+ },
+ "m5_training_one_seed": {
+  "seconds": 10.69,
+  "peak_mib": 1.5
+ },
+ "m5_peak_gpu_mib": 250.9,
+ "note": "peak_mib is Python allocation tracked by tracemalloc around each operation, an upper bound on that operation"
+}

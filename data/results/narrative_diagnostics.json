@@ -1,0 +1,43 @@
+{
+  "n_sentences": 325,
+  "negation_rate": 0.317,
+  "abstract_words": 180,
+  "abstract_numbers": 2,
+  "caption_violations": [],
+  "incantations": {
+    "pre-registered": 2,
+    "registered": 3
+  },
+  "hedge_budget_violations": [],
+  "revoke_cadence": [],
+  "number_density_results": 3.69,
+  "sections": [
+    "Introduction",
+    "Archive and rank ladder",
+    "Tasks and models",
+    "Related work",
+    "The event layer is built by a fallible extractor",
+    "What was fixed in advance",
+    "P1 holds: rank is not cardinality",
+    "P2 fails: the assignment is not reproducible",
+    "P3 fails: the structure does not pay",
+    "The split decides the answer",
+    "The mechanism: a moment is represented by its narrator",
+    "Is the failure an artefact?",
+    "What the representation is for",
+    "Does the conclusion transfer?",
+    "Topology, deleted by its own criterion",
+    "Release and self-sufficiency",
+    "Verifying the instruments",
+    "Limitations",
+    "Conclusion"
+  ],
+  "deliberate_misses": [
+    {
+      "metric": "negation_rate",
+      "observed": 0.317,
+      "target": 0.08,
+      "justification": "the paper's central claims are negative findings; the flagged sentences state results rather than hedge them"
+    }
+  ]
+}

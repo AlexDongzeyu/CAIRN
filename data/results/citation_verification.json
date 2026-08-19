@@ -1,0 +1,936 @@
+{
+  "gate": 0.92,
+  "n_verified": 27,
+  "n_manual": 1,
+  "n_inconclusive": 0,
+  "n_unverified": 0,
+  "n_total": 28,
+  "transport_errors": [
+    "openalex:HTTPError",
+    "openalex:HTTPError",
+    "openalex:HTTPError",
+    "openalex:HTTPError",
+    "openalex:HTTPError",
+    "openalex:HTTPError",
+    "openalex:HTTPError"
+  ],
+  "records": [
+    {
+      "key": "hajij2023tdl",
+      "wanted_title": "Topological Deep Learning: Going Beyond Graph Data",
+      "wanted_first_author": "Hajij",
+      "type": "misc",
+      "purpose": "combinatorial complexes; the rank-aware message passing we instantiate",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref",
+        "openalex",
+        "arxiv"
+      ],
+      "match": {
+        "title": "Topological Deep Learning: Going Beyond Graph Data",
+        "year": 2022,
+        "authors": [
+          "Mustafa Hajij",
+          "Ghada Zamzmi",
+          "Theodore Papamarkou",
+          "Nina Miolane",
+          "Aldo Guzm\u00e1n-S\u00e1enz",
+          "Karthikeyan Natesan Ramamurthy",
+          "Tolga Birdal",
+          "Tamal K. Dey",
+          "Soham Mukherjee",
+          "Shreyas N. Samaga",
+          "Neal Livesay",
+          "Robin Walters",
+          "Paul Rosen",
+          "Michael T. Schaub"
+        ],
+        "venue": "arXiv preprint",
+        "doi": null,
+        "arxiv": "2206.00606v3",
+        "type": "preprint",
+        "citations": null,
+        "retraction_flag": false,
+        "source": "arxiv"
+      },
+      "provenance": "lookup",
+      "transport_errors": [
+        "openalex:HTTPError"
+      ]
+    },
+    {
+      "key": "papillon2023architectures",
+      "wanted_title": "Architectures of Topological Deep Learning: A Survey of Message-Passing Topological Neural Networks",
+      "wanted_first_author": "Papillon",
+      "type": "misc",
+      "purpose": "taxonomy of topological message passing",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref",
+        "openalex",
+        "arxiv"
+      ],
+      "match": {
+        "title": "Architectures of Topological Deep Learning: A Survey of Message-Passing Topological Neural Networks",
+        "year": 2023,
+        "authors": [
+          "Mathilde Papillon",
+          "Sophia Sanborn",
+          "Mustafa Hajij",
+          "Nina Miolane"
+        ],
+        "venue": "arXiv preprint",
+        "doi": null,
+        "arxiv": "2304.10031v3",
+        "type": "preprint",
+        "citations": null,
+        "retraction_flag": false,
+        "source": "arxiv"
+      },
+      "provenance": "lookup",
+      "transport_errors": [
+        "openalex:HTTPError"
+      ]
+    },
+    {
+      "key": "chien2022allset",
+      "wanted_title": "You are AllSet: A Multiset Function Framework for Hypergraph Neural Networks",
+      "wanted_first_author": "Chien",
+      "type": "inproceedings",
+      "purpose": "M4 AllSetTransformer baseline",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref",
+        "openalex",
+        "arxiv"
+      ],
+      "match": {
+        "title": "You are AllSet: A Multiset Function Framework for Hypergraph Neural Networks",
+        "year": 2021,
+        "authors": [
+          "Eli Chien",
+          "Chao Pan",
+          "Jianhao Peng",
+          "Olgica Milenkovic"
+        ],
+        "venue": "arXiv preprint",
+        "doi": null,
+        "arxiv": "2106.13264v4",
+        "type": "preprint",
+        "citations": null,
+        "retraction_flag": false,
+        "source": "arxiv"
+      },
+      "provenance": "lookup",
+      "transport_errors": [
+        "openalex:HTTPError"
+      ]
+    },
+    {
+      "key": "wang2023edhnn",
+      "wanted_title": "Equivariant Hypergraph Diffusion Neural Operators",
+      "wanted_first_author": "Wang",
+      "type": "inproceedings",
+      "purpose": "M4 ED-HNN baseline",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref",
+        "openalex",
+        "arxiv"
+      ],
+      "match": {
+        "title": "Equivariant Hypergraph Diffusion Neural Operators",
+        "year": 2022,
+        "authors": [
+          "Peihao Wang",
+          "Shenghao Yang",
+          "Yunyu Liu",
+          "Zhangyang Wang",
+          "Pan Li"
+        ],
+        "venue": "arXiv preprint",
+        "doi": null,
+        "arxiv": "2207.06680v3",
+        "type": "preprint",
+        "citations": null,
+        "retraction_flag": false,
+        "source": "arxiv"
+      },
+      "provenance": "lookup",
+      "transport_errors": [
+        "openalex:HTTPError"
+      ]
+    },
+    {
+      "key": "moosavi2016lea",
+      "wanted_title": "Which Coreference Evaluation Metric Do You Trust? A Proposal for a Link-based Entity Aware Metric",
+      "wanted_first_author": "Moosavi",
+      "type": "inproceedings",
+      "purpose": "LEA, the primary coreference metric",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Which Coreference Evaluation Metric Do You Trust? A Proposal for a Link-based Entity Aware Metric",
+        "year": 2016,
+        "authors": [
+          "Nafise Sadat Moosavi",
+          "Michael Strube"
+        ],
+        "venue": "Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "doi": "10.18653/v1/p16-1060",
+        "arxiv": null,
+        "type": "proceedings-article",
+        "citations": 44,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "cybulska2014ecbplus",
+      "wanted_title": "Using a sledgehammer to crack a nut? Lexical diversity and event coreference resolution",
+      "wanted_first_author": "Cybulska",
+      "type": "inproceedings",
+      "purpose": "ECB+, the corpus named in the substitution ledger",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Using a sledgehammer to crack a nut? Lexical diversity and event coreference resolution",
+        "year": 2014,
+        "authors": [
+          "Agata Cybulska",
+          "Piek Vossen"
+        ],
+        "venue": "Proceedings of the Language Resources and Evaluation Conference",
+        "doi": "10.63317/56eog75zit7h",
+        "arxiv": null,
+        "type": "proceedings-article",
+        "citations": 1,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "bugert2021generalizing",
+      "wanted_title": "Generalizing Cross-Document Event Coreference Resolution Across Multiple Corpora",
+      "wanted_first_author": "Bugert",
+      "type": "article",
+      "purpose": "cross-corpus CDEC instability motivating the E3.2 ledger entry",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Generalizing Cross-Document Event Coreference Resolution Across Multiple Corpora",
+        "year": 2021,
+        "authors": [
+          "Michael Bugert",
+          "Nils Reimers",
+          "Iryna Gurevych"
+        ],
+        "venue": "Computational Linguistics",
+        "doi": "10.1162/coli_a_00407",
+        "arxiv": null,
+        "type": "journal-article",
+        "citations": 5,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "kummerfeld2013error",
+      "wanted_title": "Error-Driven Analysis of Challenges in Coreference Resolution",
+      "wanted_first_author": "Kummerfeld",
+      "type": "inproceedings",
+      "purpose": "coreference error taxonomy behind E3.5",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Error-Driven Analysis of Challenges in Coreference Resolution",
+        "year": 2013,
+        "authors": [
+          "Jonathan K. Kummerfeld",
+          "Dan Klein"
+        ],
+        "venue": "Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing",
+        "doi": "10.18653/v1/d13-1027",
+        "arxiv": null,
+        "type": "proceedings-article",
+        "citations": 6,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "webber2010rbo",
+      "wanted_title": "A similarity measure for indefinite rankings",
+      "wanted_first_author": "Webber",
+      "type": "article",
+      "purpose": "rank-biased overlap, used for triage-list stability",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "A similarity measure for indefinite rankings",
+        "year": 2010,
+        "authors": [
+          "William Webber",
+          "Alistair Moffat",
+          "Justin Zobel"
+        ],
+        "venue": "ACM Transactions on Information Systems",
+        "doi": "10.1145/1852102.1852106",
+        "arxiv": null,
+        "type": "journal-article",
+        "citations": 645,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "dror2019deepdominance",
+      "wanted_title": "Deep Dominance - How to Properly Compare Deep Neural Models",
+      "wanted_first_author": "Dror",
+      "type": "inproceedings",
+      "purpose": "almost stochastic order testing",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Deep Dominance - How to Properly Compare Deep Neural Models",
+        "year": 2019,
+        "authors": [
+          "Rotem Dror",
+          "Segev Shlomov",
+          "Roi Reichart"
+        ],
+        "venue": "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+        "doi": "10.18653/v1/p19-1266",
+        "arxiv": null,
+        "type": "proceedings-article",
+        "citations": 41,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "ulmer2022deepsig",
+      "wanted_title": "deep-significance: Easy and Meaningful Statistical Significance Testing in the Age of Neural Networks",
+      "wanted_first_author": "Ulmer",
+      "type": "misc",
+      "purpose": "the ASO implementation used",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref",
+        "openalex",
+        "arxiv"
+      ],
+      "match": {
+        "title": "deep-significance - Easy and Meaningful Statistical Significance Testing in the Age of Neural Networks",
+        "year": 2022,
+        "authors": [
+          "Dennis Ulmer",
+          "Christian Hardmeier",
+          "Jes Frellsen"
+        ],
+        "venue": "arXiv preprint",
+        "doi": null,
+        "arxiv": "2204.06815v1",
+        "type": "preprint",
+        "citations": null,
+        "retraction_flag": false,
+        "source": "arxiv"
+      },
+      "provenance": "lookup",
+      "transport_errors": [
+        "openalex:HTTPError"
+      ]
+    },
+    {
+      "key": "gwet2008ac1",
+      "wanted_title": "Computing inter-rater reliability and its variance in the presence of high agreement",
+      "wanted_first_author": "Gwet",
+      "type": "article",
+      "purpose": "AC1, reported beside Krippendorff alpha",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Computing inter\u2010rater reliability and its variance in the presence of high agreement",
+        "year": 2008,
+        "authors": [
+          "Kilem Li Gwet"
+        ],
+        "venue": "British Journal of Mathematical and Statistical Psychology",
+        "doi": "10.1348/000711006x126600",
+        "arxiv": null,
+        "type": "journal-article",
+        "citations": 1678,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "patil2020negative",
+      "wanted_title": "Negative Sampling for Hyperlink Prediction in Networks",
+      "wanted_first_author": "Patil",
+      "type": "inproceedings",
+      "purpose": "the four negative-sampling regimes",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Negative Sampling for Hyperlink Prediction in Networks",
+        "year": 2020,
+        "authors": [
+          "Prasanna Patil",
+          "Govind Sharma",
+          "M. Narasimha Murty"
+        ],
+        "venue": "Lecture Notes in Computer Science",
+        "doi": "10.1007/978-3-030-47436-2_46",
+        "arxiv": null,
+        "type": "book-chapter",
+        "citations": 25,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "reimers2019sbert",
+      "wanted_title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+      "wanted_first_author": "Reimers",
+      "type": "inproceedings",
+      "purpose": "the frozen sentence encoder held constant across models",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+        "year": 2019,
+        "authors": [
+          "Nils Reimers",
+          "Iryna Gurevych"
+        ],
+        "venue": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+        "doi": "10.18653/v1/d19-1410",
+        "arxiv": null,
+        "type": "proceedings-article",
+        "citations": 8845,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "zhou2006hypergraph",
+      "wanted_title": "Learning with Hypergraphs: Clustering, Classification, and Embedding",
+      "wanted_first_author": "Zhou",
+      "type": "inproceedings",
+      "purpose": "normalized hypergraph Laplacian",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Learning with Hypergraphs: Clustering, Classification, and Embedding",
+        "year": 2007,
+        "authors": [
+          "Dengyong Zhou",
+          "Jiayuan Huang",
+          "Bernhard Sch\u00f6lkopf"
+        ],
+        "venue": "Advances in Neural Information Processing Systems 19",
+        "doi": "10.7551/mitpress/7503.003.0205",
+        "arxiv": null,
+        "type": "book-chapter",
+        "citations": 543,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "forman2003ricci",
+      "wanted_title": "Bochner's Method for Cell Complexes and Combinatorial Ricci Curvature",
+      "wanted_first_author": "Forman",
+      "type": "article",
+      "purpose": "discrete curvature encoding",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Bochner's Method for Cell Complexes and Combinatorial Ricci Curvature",
+        "year": 2003,
+        "authors": [
+          "Robin Forman"
+        ],
+        "venue": "Discrete and Computational Geometry",
+        "doi": "10.1007/s00454-002-0743-x",
+        "arxiv": null,
+        "type": "journal-article",
+        "citations": 231,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "krippendorff2004content",
+      "wanted_title": "Content Analysis: An Introduction to Its Methodology",
+      "wanted_first_author": "Krippendorff",
+      "type": "book",
+      "purpose": "Krippendorff alpha, the pre-registered agreement statistic",
+      "verified": false,
+      "title_similarity": 0.432,
+      "first_author_confirmed": false,
+      "sources_tried": [
+        "crossref",
+        "openalex",
+        "arxiv"
+      ],
+      "match": {
+        "title": "The Logic of Content Analysis Designs",
+        "year": 2019,
+        "authors": [],
+        "venue": "Content Analysis: An Introduction to Its Methodology",
+        "doi": "10.4135/9781071878781.n5",
+        "arxiv": null,
+        "type": "book-chapter",
+        "citations": 4,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "manual",
+      "transport_errors": [
+        "openalex:HTTPError"
+      ],
+      "manual": {
+        "kind": "book",
+        "checked": "hand-checked; Sage monograph not reliably indexed by Crossref",
+        "fields": {
+          "title": "Content Analysis: An Introduction to Its Methodology",
+          "author": "Klaus Krippendorff",
+          "year": "2004",
+          "edition": "2nd",
+          "publisher": "Sage Publications",
+          "address": "Thousand Oaks, CA"
+        }
+      }
+    },
+    {
+      "key": "tang2024hypergraphmlp",
+      "wanted_title": "Hypergraph-MLP: Learning on Hypergraphs without Message Passing",
+      "wanted_first_author": "Tang",
+      "type": "inproceedings",
+      "purpose": "message-passing-free hypergraph learning matches HNNs",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Hypergraph-Mlp: Learning on Hypergraphs Without Message Passing",
+        "year": 2024,
+        "authors": [
+          "Bohan Tang",
+          "Siheng Chen",
+          "Xiaowen Dong"
+        ],
+        "venue": "ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+        "doi": "10.1109/icassp48485.2024.10446277",
+        "arxiv": null,
+        "type": "proceedings-article",
+        "citations": 5,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "papillon2024topotune",
+      "wanted_title": "TopoTune: A Framework for Generalized Combinatorial Complex Neural Networks",
+      "wanted_first_author": "Papillon",
+      "type": "misc",
+      "purpose": "generalized CCNNs do not uniformly beat graph baselines",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref",
+        "openalex",
+        "arxiv"
+      ],
+      "match": {
+        "title": "TopoTune : A Framework for Generalized Combinatorial Complex Neural Networks",
+        "year": 2024,
+        "authors": [
+          "Mathilde Papillon",
+          "Guillermo Bern\u00e1rdez",
+          "Claudio Battiloro",
+          "Nina Miolane"
+        ],
+        "venue": "arXiv preprint",
+        "doi": null,
+        "arxiv": "2410.06530v5",
+        "type": "preprint",
+        "citations": null,
+        "retraction_flag": false,
+        "source": "arxiv"
+      },
+      "provenance": "lookup",
+      "transport_errors": [
+        "openalex:HTTPError"
+      ]
+    },
+    {
+      "key": "dacrema2019worrying",
+      "wanted_title": "Are We Really Making Much Progress? A Worrying Analysis of Recent Neural Recommendation Approaches",
+      "wanted_first_author": "Ferrari Dacrema",
+      "type": "inproceedings",
+      "purpose": "weak baselines and evaluation design manufacture apparent progress",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Are we really making much progress? A worrying analysis of recent neural recommendation approaches",
+        "year": 2019,
+        "authors": [
+          "Maurizio Ferrari Dacrema",
+          "Paolo Cremonesi",
+          "Dietmar Jannach"
+        ],
+        "venue": "Proceedings of the 13th ACM Conference on Recommender Systems",
+        "doi": "10.1145/3298689.3347058",
+        "arxiv": null,
+        "type": "proceedings-article",
+        "citations": 389,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "zadeh1997granulation",
+      "wanted_title": "Toward a theory of fuzzy information granulation and its centrality in human reasoning and fuzzy logic",
+      "wanted_first_author": "Zadeh",
+      "type": "article",
+      "purpose": "foundational statement of information granulation",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Toward a theory of fuzzy information granulation and its centrality in human reasoning and fuzzy logic",
+        "year": 1997,
+        "authors": [
+          "Lotfi A. Zadeh"
+        ],
+        "venue": "Fuzzy Sets and Systems",
+        "doi": "10.1016/s0165-0114(97)00077-8",
+        "arxiv": null,
+        "type": "journal-article",
+        "citations": 2349,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "yao2005perspectives",
+      "wanted_title": "Perspectives of granular computing",
+      "wanted_first_author": "Yao",
+      "type": "inproceedings",
+      "purpose": "granular computing as description at multiple resolutions",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Perspectives of granular computing",
+        "year": 2005,
+        "authors": [
+          "Y. Yao"
+        ],
+        "venue": "2005 IEEE International Conference on Granular Computing",
+        "doi": "10.1109/grc.2005.1547239",
+        "arxiv": null,
+        "type": "proceedings-article",
+        "citations": 216,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "pawlak1982rough",
+      "wanted_title": "Rough sets",
+      "wanted_first_author": "Pawlak",
+      "type": "article",
+      "purpose": "granulation by indiscernibility; the rank-2 equivalence relation is one",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Rough Sets",
+        "year": 1997,
+        "authors": [
+          "Zdzis\u0142aw Pawlak"
+        ],
+        "venue": "Rough Sets and Data Mining",
+        "doi": "10.1007/978-1-4613-1461-5_1",
+        "arxiv": null,
+        "type": "book-chapter",
+        "citations": 42,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "kapoor2023leakage",
+      "wanted_title": "Leakage and the reproducibility crisis in machine-learning-based science",
+      "wanted_first_author": "Kapoor",
+      "type": "article",
+      "purpose": "leakage as a cross-field reproducibility failure",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Leakage and the reproducibility crisis in machine-learning-based science",
+        "year": 2023,
+        "authors": [
+          "Sayash Kapoor",
+          "Arvind Narayanan"
+        ],
+        "venue": "Patterns",
+        "doi": "10.1016/j.patter.2023.100804",
+        "arxiv": null,
+        "type": "journal-article",
+        "citations": 819,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "sogaard2021splits",
+      "wanted_title": "We Need To Talk About Random Splits",
+      "wanted_first_author": "S\u00f8gaard",
+      "type": "inproceedings",
+      "purpose": "random splits give optimistic estimates; the general form of our split result",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref-doi"
+      ],
+      "match": {
+        "title": "We Need To Talk About Random Splits",
+        "year": 2021,
+        "authors": [
+          "Anders S\u00f8gaard",
+          "Sebastian Ebert",
+          "Jasmijn Bastings",
+          "Katja Filippova"
+        ],
+        "venue": "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
+        "doi": "10.18653/v1/2021.eacl-main.156",
+        "arxiv": null,
+        "type": "proceedings-article",
+        "citations": 20,
+        "retraction_flag": false,
+        "source": "crossref-doi"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "roberts2017cv",
+      "wanted_title": "Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure",
+      "wanted_first_author": "Roberts",
+      "type": "article",
+      "purpose": "group-structured splitting as established methodology",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref"
+      ],
+      "match": {
+        "title": "Cross\u2010validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure",
+        "year": 2017,
+        "authors": [
+          "David R. Roberts",
+          "Volker Bahn",
+          "Simone Ciuti",
+          "Mark S. Boyce",
+          "Jane Elith",
+          "Gurutzeta Guillera\u2010Arroita",
+          "Severin Hauenstein",
+          "Jos\u00e9 J. Lahoz\u2010Monfort",
+          "Boris Schr\u00f6der",
+          "Wilfried Thuiller",
+          "David I. Warton",
+          "Brendan A. Wintle",
+          "Florian Hartig",
+          "Carsten F. Dormann"
+        ],
+        "venue": "Ecography",
+        "doi": "10.1111/ecog.02881",
+        "arxiv": null,
+        "type": "journal-article",
+        "citations": 2570,
+        "retraction_flag": false,
+        "source": "crossref"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "carlsson2009topology",
+      "wanted_title": "Topology and data",
+      "wanted_first_author": "Carlsson",
+      "type": "article",
+      "purpose": "topological data analysis, the frame for the filtration section",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref-doi"
+      ],
+      "match": {
+        "title": "Topology and data",
+        "year": 2009,
+        "authors": [
+          "Gunnar Carlsson"
+        ],
+        "venue": "Bulletin of the American Mathematical Society",
+        "doi": "10.1090/s0273-0979-09-01249-x",
+        "arxiv": null,
+        "type": "journal-article",
+        "citations": 1814,
+        "retraction_flag": false,
+        "source": "crossref-doi"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    },
+    {
+      "key": "feng2019hgnn",
+      "wanted_title": "Hypergraph Neural Networks",
+      "wanted_first_author": "Feng",
+      "type": "inproceedings",
+      "purpose": "HGNN, the baseline lineage the M4 family descends from",
+      "verified": true,
+      "title_similarity": 1.0,
+      "first_author_confirmed": true,
+      "sources_tried": [
+        "crossref-doi"
+      ],
+      "match": {
+        "title": "Hypergraph Neural Networks",
+        "year": 2019,
+        "authors": [
+          "Yifan Feng",
+          "Haoxuan You",
+          "Zizhao Zhang",
+          "Rongrong Ji",
+          "Yue Gao"
+        ],
+        "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+        "doi": "10.1609/aaai.v33i01.33013558",
+        "arxiv": null,
+        "type": "journal-article",
+        "citations": 1434,
+        "retraction_flag": false,
+        "source": "crossref-doi"
+      },
+      "provenance": "lookup",
+      "transport_errors": []
+    }
+  ]
+}
