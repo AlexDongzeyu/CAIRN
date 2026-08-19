@@ -11,8 +11,6 @@
 !/src/
 !/experiments/
 !/tests/
-!/paper/
-!/figures/
 !/release/
 !/data/
 
@@ -25,23 +23,3 @@ __pycache__/
 !/data/results/
 /data/results/e7_per_item_primary.json
 /data/results/e_split_first.json
-
-# paper/: sources and the compiled PDF, no LaTeX build output. main.tex inlines its
-# tables, so the generated table_*.tex are byproducts nothing includes.
-/paper/*.aux
-/paper/*.bbl
-/paper/*.blg
-/paper/*.log
-/paper/*.out
-/paper/*.toc
-/paper/table_*.tex
-/paper/PAPER_IMPROVEMENT_LOG.md
-/paper/build_report.json
-/paper/numbers_manifest.json
-
-# figures/: only the three the paper includes.
-/figures/*
-!/figures/captions.json
-!/figures/fig1_overview.jpg
-!/figures/fig3_models.pdf
-!/figures/fig7_mechanism.pdf

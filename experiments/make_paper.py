@@ -748,7 +748,7 @@ in Higher-Order Models of Oral History}
 \author{\IEEEauthorblockN{Zeyu Dong and Roy Choi}
 \IEEEauthorblockA{\textit{Independent Researcher}, Toronto, Canada \\
 Correspondence: dongzeyu123@outlook.com}}
-\newcommand{\repoURL}{https://github.com/AlexDongzeyu/CARIN}
+\newcommand{\repoURL}{https://github.com/AlexDongzeyu/CAIRN}
 
 \begin{document}
 \maketitle
