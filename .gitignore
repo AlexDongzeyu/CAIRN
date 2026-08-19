@@ -5,6 +5,8 @@
 !/.gitignore
 !/README.md
 !/PREREGISTRATION.yaml
+!/research-log.md
+!/findings.md
 
 !/src/
 !/experiments/
@@ -24,13 +26,15 @@ __pycache__/
 /data/results/e7_per_item_primary.json
 /data/results/e_split_first.json
 
-# paper/: sources and the compiled PDF, no LaTeX build output.
+# paper/: sources and the compiled PDF, no LaTeX build output. main.tex inlines its
+# tables, so the generated table_*.tex are byproducts nothing includes.
 /paper/*.aux
 /paper/*.bbl
 /paper/*.blg
 /paper/*.log
 /paper/*.out
 /paper/*.toc
+/paper/table_*.tex
 /paper/PAPER_IMPROVEMENT_LOG.md
 /paper/build_report.json
 /paper/numbers_manifest.json

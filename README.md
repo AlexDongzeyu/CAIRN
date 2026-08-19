@@ -22,7 +22,15 @@ The paper is [`paper/main.pdf`](paper/main.pdf).
 | [`data/results/`](data/results/) | Every experiment's output as JSON. Each number in the paper is read from one of these. |
 | [`paper/`](paper/) | LaTeX sources and the compiled PDF. |
 | [`figures/`](figures/) | The three figures the paper includes. |
-| [`PREREGISTRATION.yaml`](PREREGISTRATION.yaml) | Registered defaults and predictions, fixed before the runs. |
+| [`PREREGISTRATION.yaml`](PREREGISTRATION.yaml) | Registered defaults and predictions, fixed before the runs, plus the substitution ledger. |
+| [`research-log.md`](research-log.md) | The defect log: every instrument error caught before it became a finding, dated. |
+| [`findings.md`](findings.md) | Standing conclusions, checked against `data/results/` by `experiments/claim_audit.py`. |
+
+Section XII of the paper promises the release carries the cell definitions, incidence
+matrices at all three granularities, the splits, the annotation manual, a licence audit, the
+defect log, the substitution record and a fetch script. The first five and the last are in
+`release/`; the defect log is `research-log.md` and the substitution record is the
+`substitution_ledger` block of `PREREGISTRATION.yaml`.
 
 ## The data release
 

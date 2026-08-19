@@ -30,9 +30,10 @@ from experiments.run_phase5_7 import PARAM_BUDGET, PRIMARY, load_rank_maps, prep
 RES = ROOT / "data" / "results"
 MODELS = ("M3_typed_star", "M5_ccnn")
 FEATURES = ("plain", "enc")
-# The random-split arm produced a degenerate bootstrap interval that we could not reproduce
-# with an independent probe, so it is withheld rather than reported.
-SPLITS = ("narrator-disjoint",)
+# Both split levels are required: the operator effect is only interpretable as a pair, and the
+# random arm is what shows the effect is mostly exposure. An earlier version reused the cache
+# across splits and returned a degenerate interval here; the per-split reset below is the fix.
+SPLITS = ("narrator-disjoint", "random")
 SEEDS_USED = SEEDS[:5]
 
 log = make_logger("e_factorial")
@@ -46,6 +47,7 @@ def main() -> None:
     cache: dict = {}
 
     out: dict = {"seeds": list(SEEDS_USED), "cells": {}}
+    per_narrator: dict[str, dict[str, list[float]]] = {}
     for split in SPLITS:
         # A cache shared across split levels returns the previous split's queries, which
         # silently scores one cell against another cell's test set.
@@ -78,9 +80,11 @@ def main() -> None:
                 if abs(boot["point"] - np.nanmean(maps)) > 0.02:
                     raise SystemExit(f"{key}: pooled AP {boot['point']:.4f} disagrees with "
                                      f"seed-mean MAP {np.nanmean(maps):.4f}")
+                per_narrator[key] = by_narr
                 out["cells"][key] = {
                     "T1_map": float(np.nanmean(maps)),
                     "T1_map_ci": [boot["lo"], boot["hi"]],
+                    "T1_map_per_seed": [float(m) for m in maps],
                     "T2_auc": float(np.nanmean(aucs)),
                     "n_params": int(r["n_params"]), "hidden": int(hidden),
                     "n_narrators": len(by_narr),
@@ -88,13 +92,31 @@ def main() -> None:
                 log(f"  {key:44s} MAP={np.nanmean(maps):.4f} "
                     f"[{boot['lo']:.4f},{boot['hi']:.4f}]  AUC={np.nanmean(aucs):.4f}")
 
-    # The operator claim is the sign of (complex - star) with features held fixed.
+    # The operator claim is the sign of (complex - star) with features held fixed. Marginal
+    # intervals overlap, which is not a test of the difference, so the difference gets its own
+    # narrator-clustered interval over the narrators the two cells share.
     for feat in FEATURES:
         for split in SPLITS:
-            d = (out["cells"][f"M5_ccnn|{feat}|{split}"]["T1_map"]
-                 - out["cells"][f"M3_typed_star|{feat}|{split}"]["T1_map"])
+            hi_key, lo_key = f"M5_ccnn|{feat}|{split}", f"M3_typed_star|{feat}|{split}"
+            d = out["cells"][hi_key]["T1_map"] - out["cells"][lo_key]["T1_map"]
             out.setdefault("operator_effect", {})[f"{feat}|{split}"] = float(d)
-            log(f"  operator effect (M5-M3) {feat}/{split}: {d:+.4f}")
+
+            a, b = per_narrator[hi_key], per_narrator[lo_key]
+            shared = sorted(set(a) & set(b))
+            if not shared:
+                raise SystemExit(f"{feat}|{split}: cells share no narrator")
+
+            def paired(us: list[str], _a=a, _b=b) -> float:
+                if not us:
+                    return 0.0
+                return (float(np.mean([v for u in us for v in _a[u]]))
+                        - float(np.mean([v for u in us for v in _b[u]])))
+
+            pb = cluster_bootstrap(paired, shared, B=2000, seed=0, bca=False)
+            out.setdefault("operator_effect_ci", {})[f"{feat}|{split}"] = [pb["lo"], pb["hi"]]
+            excl = "excludes 0" if pb["lo"] > 0 or pb["hi"] < 0 else "contains 0"
+            log(f"  operator effect (M5-M3) {feat}/{split}: {d:+.4f} "
+                f"paired 95% [{pb['lo']:+.4f},{pb['hi']:+.4f}] over {len(shared)} narrators, {excl}")
 
     if len(out["cells"]) != len(MODELS) * len(FEATURES) * len(SPLITS):
         raise SystemExit(f"expected {len(MODELS) * len(FEATURES) * len(SPLITS)} cells, "

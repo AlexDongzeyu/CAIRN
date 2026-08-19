@@ -293,6 +293,12 @@ SPEC = [
     ("facFiveEncAuc", "e_factorial", "cells/M5_ccnn|enc|narrator-disjoint/T2_auc", f3),
     ("facFivePlainAuc", "e_factorial", "cells/M5_ccnn|plain|narrator-disjoint/T2_auc", f3),
     ("facOpPlainDisj", "e_factorial", "operator_effect/plain|narrator-disjoint", f3),
+    ("facOpPlainDisjLo", "e_factorial", "operator_effect_ci/plain|narrator-disjoint/0", f3),
+    ("facOpPlainDisjHi", "e_factorial", "operator_effect_ci/plain|narrator-disjoint/1", f3),
+    ("facOpEncDisjLo", "e_factorial", "operator_effect_ci/enc|narrator-disjoint/0", f3),
+    ("facOpEncDisjHi", "e_factorial", "operator_effect_ci/enc|narrator-disjoint/1", f3),
+    ("facNarrDisj", "e_factorial",
+     "cells/M3_typed_star|plain|narrator-disjoint/n_narrators", intc),
     ("facOpPlainRand", "e_factorial", "operator_effect/plain|random", f3),
     ("facOpEncDisj", "e_factorial", "operator_effect/enc|narrator-disjoint", f3),
     ("facOpEncRand", "e_factorial", "operator_effect/enc|random", f3),
@@ -1212,8 +1218,10 @@ worth
 \facThreeEnc{} minus \facThreePlain{} to the star and almost nothing to the complex, so the
 sign of the operator comparison is set by the inputs rather than by the operator. Their
 marginal intervals overlap ([\facThreePlainLo{}, \facThreePlainHi{}] against
-[\facFivePlainLo{}, \facFivePlainHi{}]), so we read the sign of that \facOpPlainDisj{} rather
-than its magnitude; the encoded cells separate cleanly. What the matched arm settles is where
+[\facFivePlainLo{}, \facFivePlainHi{}]), but the paired difference does not: resampling the
+\facNarrDisj{} test narrators puts that \facOpPlainDisj{} at [\facOpPlainDisjLo{},
+\facOpPlainDisjHi{}], and the encoded cells reverse at [\facOpEncDisjLo{},
+\facOpEncDisjHi{}]. What the matched arm settles is where
 the advantage comes from: it grows to \facOpPlainRand{} once narrators straddle the split, so
 most of it is the exposure this paper is about. Encodings are not wasted on the complex,
 since

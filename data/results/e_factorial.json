@@ -101,5 +101,19 @@
     "plain|random": 0.15298662530179233,
     "enc|narrator-disjoint": -0.046195255440026825,
     "enc|random": -0.04061373352238973
+  },
+  "operator_effect_ci": {
+    "plain|narrator-disjoint": [
+      0.022979796849807173,
+      0.04237937585122057
+    ],
+    "enc|narrator-disjoint": [
+      -0.053390240336849554,
+      -0.03893049197609332
+    ]
+  },
+  "reproducibility": {
+    "narrator-disjoint": "reproduces to 1e-5 across runs (float reduction order)",
+    "random": "does NOT reproduce across runs; see research-log.md"
   }
 }
