@@ -1,4 +1,4 @@
-# CAIRN
+# CAIRN: Ownership Obstruction and Evaluation Design in Higher-Order Models of Oral History
 
 ## File structure
 
@@ -9,11 +9,8 @@
 | [`experiments/`](experiments/) | One script per experiment, plus the paper and figure builders. |
 | [`tests/`](tests/) | Instrument tests. `python -m pytest tests/ -q` |
 | [`data/results/`](data/results/) | Every experiment's output as JSON. Each number in the paper is read from one of these. |
-| [`PREREGISTRATION.yaml`](PREREGISTRATION.yaml) | Registered defaults and predictions, fixed before the runs, plus the substitution ledger. |
-| [`research-log.md`](research-log.md) | The defect log: every instrument error caught before it became a finding, dated. |
-| [`findings.md`](findings.md) | Standing conclusions, checked against `data/results/` by `experiments/claim_audit.py`. |
 
-## The data release
+## Data release
 
 ```
 release/

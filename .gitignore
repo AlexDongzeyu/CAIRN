@@ -4,9 +4,6 @@
 
 !/.gitignore
 !/README.md
-!/PREREGISTRATION.yaml
-!/research-log.md
-!/findings.md
 
 !/src/
 !/experiments/
