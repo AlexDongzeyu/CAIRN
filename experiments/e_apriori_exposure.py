@@ -16,6 +16,7 @@ from __future__ import annotations
 import json
 import sys
 from collections import Counter
+from math import comb
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -45,6 +46,12 @@ def main() -> None:
     three = expected(props)
     two = expected([0.7, 0.3])
 
+    # The splitter permutes and slices, so fold sizes are exact and the draw is without
+    # replacement; this is the finite-sample law the independent form above approximates.
+    sizes = [len(v) for v in rand.values()]
+    hyper = sum(1.0 - sum(comb(s, ke) / comb(total, ke) for s in sizes if s >= ke)
+                for ke in k.values()) / len(k)
+
     seen: dict[str, set[str]] = {}
     fold = {f"{e}||{n}": f for f, v in rand.items() for x in v for e, n in [x.split("||", 1)]}
     for e, n in pairs:
@@ -61,6 +68,8 @@ def main() -> None:
         "frac_k_equals_one": singletons / len(k),
         "expected_three_fold": three,
         "expected_two_fold_p07": two,
+        "expected_hypergeometric": hyper,
+        "hypergeometric_gap_pp": abs(three - hyper) * 100.0,
         "observed": observed,
         "abs_error_three_fold": abs(three - observed),
         "abs_error_two_fold": abs(two - observed),
@@ -71,6 +80,8 @@ def main() -> None:
     log(f"  cells per narrator: median {out['median_k']}, mean {out['mean_k']:.2f}")
     log(f"  narrators with k=1: {singletons} ({singletons / len(k):.1%}) - these cannot straddle")
     log(f"  predicted (three folds, observed proportions) {three:.4f}")
+    log(f"  predicted (exact fold sizes, hypergeometric)  {hyper:.4f}"
+        f"   gap {abs(three - hyper) * 100:.3f} pp")
     log(f"  predicted (two folds, p=0.7)                  {two:.4f}")
     log(f"  observed                                      {observed:.4f}")
     log(f"  |error| three-fold {abs(three - observed):.4f}   two-fold {abs(two - observed):.4f}")

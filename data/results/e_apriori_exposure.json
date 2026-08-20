@@ -11,6 +11,8 @@
   "frac_k_equals_one": 0.17708333333333334,
   "expected_three_fold": 0.6411205220702131,
   "expected_two_fold_p07": 0.6311767562420386,
+  "expected_hypergeometric": 0.6413645356354615,
+  "hypergeometric_gap_pp": 0.024401356524839102,
   "observed": 0.6484375,
   "abs_error_three_fold": 0.007316977929786916,
   "abs_error_two_fold": 0.017260743757961383
