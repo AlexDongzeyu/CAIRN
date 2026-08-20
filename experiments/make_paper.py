@@ -988,7 +988,10 @@ architecture could reach under a task-aligned loss. Two design choices keep that
 query: its own cell
 membership is masked, so the answer cannot be read off the structure the model is handed, and
 any candidate sharing a narrator with it is excluded from the positives, so a model
-cannot score by recognising the speaker instead of the event. We score MAP over\nTOneQueries{} held-out queries, with nDCG@10, Recall@50 and MRR alongside.\textbf{T2, incidence prediction.} Given a narrator and an event cell, predict whether that
+cannot score by recognising the speaker instead of the event. We score MAP over
+\nTOneQueries{} held-out queries, with nDCG@10, Recall@50 and MRR alongside.
+
+\textbf{T2, incidence prediction.} Given a narrator and an event cell, predict whether that
 narrator is incident to that event, a link task over the bipartite incidence relation, scored
 by AUC. In the primary regime, negatives come from cells at a short random-walk distance, so
 they are plausible.
