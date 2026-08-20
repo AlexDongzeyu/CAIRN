@@ -807,7 +807,8 @@ the split decides whether that collapse is visible: \straddleRandom{} of narrato
 random split, a rate the entity-degree distribution predicts at \exposurePredicted{} before
 any model exists. Given that exposure, our CCNN-style ranked-incidence model appears to beat a
 lossless typed-star expansion \MfiveToneRandom{} to \MthreeToneRandom{} in T1 MAP, and trails
-it \MfiveTone{} to \MthreeTone{} once narrators are held out, while destroying entity identity
+it \MfiveTone{} to \MthreeTone{} once narrators are held out, a reversal that holds on all
+\partN{} independently drawn partitions of each kind, while destroying entity identity
 removes the complex's gain. Gains of that kind track the inputs rather than the operator: the
 star leads as registered, carrying spectral encodings the complex never receives, the ordering
 reverses once both read the same features, and on those matched inputs both leak,
@@ -835,7 +836,7 @@ archivists built it rather than an algorithm inducing it from data. Granular com
 what makes such a description a good one, and topological deep learning offers to compute on
 it: a combinatorial complex assigns each cell a rank, holds a coarser granule at each rank
 than the one below, and lets messages travel between ranks as well as within
-them~\citep{hajij2023tdl,papillon2023architectures}. Across those ranks the operator family is
+them~\citep{hajij2023tdl,papillon2023architectures}. Across those ranks, the operator family is
 rank-aware in a way graph and hypergraph message passing is not, so a curated ladder is
 tempting to read as a rank ladder. Reading the ladder that way meets a
 counting problem (Figure~\ref{fig:overview}): a combinatorial complex identifies a
@@ -844,8 +845,8 @@ and this archive's \obsCells{} moments carry \obsDistinct{} distinct supports ov
 \obsGround{} narrators. Those collapsed supports are what we call the \emph{ownership
 obstruction}.
 
-Before a rank-structured model can be said to help, the granulation itself has to pass three
-tests, one for each of the qualities a granulation is asked for.
+Before a rank-structured model can be said to help, three operational preconditions have to
+hold for this curated granulation.
 
 \begin{description}[leftmargin=0em,itemsep=1pt,topsep=2pt,parsep=0pt]
 \item[P1. Distinguishability.] Rank carries information beyond size. Coarsening a partition
@@ -854,7 +855,8 @@ larger blocks, so rank and size are expected to move together in any granulation
 curated granulation has to add is the residual: if rank is recoverable from
 cell size alone, the
 ladder is a sorting of set sizes and nothing is gained by calling it structure.
-\item[P2. Reproducible assignment.] The specification is stable. If independently written
+\item[P2. Specification determinacy.] The written rules fix the assignment. If independently
+written
 implementations of the
 same manual, each consistent with its rules, assign a term to different ranks, the ladder
 cannot be operationalised
@@ -874,17 +876,16 @@ from its inputs: on matched features the ordering reverses. That ladder is real;
 machinery built on it has still to earn its place.
 
 A fourth result, undeclared in advance, matters most and concerns the train/test split. Under
-a random split the ordering of architectures reverses and the complex's advantage is large,
+a random split, the ordering of architectures reverses and the complex's advantage is large,
 while it leads under no other design axis we varied, placing that advantage in the split
 rather than the operator.
 
 The reason lies in the feature construction these models are normally given. Nearly every
 moment has a single narrator, so a moment's input vector \emph{is} its narrator's vector, and
 two such moments land on both sides of a random split as the same vector. Shuffling narrator
-identity removes that vector's privilege and with it the complex's entire random-split
-advantage, while replacing the moment features with passage-specific text does not, which
-locates the leak in the narrator layer. Those extra ranks buy a shorter path to who is
-speaking.
+identity removes the complex's entire random-split advantage, while replacing the moment
+features with passage-specific text does not, which locates the leak in the narrator layer.
+Those extra ranks buy a shorter path to who is speaking.
 
 Three things are new here: an exact support-injectivity test decidable on the encoding before
 a model exists, where the surrounding literature offers diagnostics that correlate with
@@ -987,11 +988,9 @@ architecture could reach under a task-aligned loss. Two design choices keep that
 query: its own cell
 membership is masked, so the answer cannot be read off the structure the model is handed, and
 any candidate sharing a narrator with it is excluded from the positives, so a model
-cannot score by recognising the speaker instead of the event. We score MAP over
-\nTOneQueries{} held-out queries, with nDCG@10, Recall@50 and MRR alongside.
-\textbf{T2, incidence prediction.} Given a narrator and an event cell, predict whether that
+cannot score by recognising the speaker instead of the event. We score MAP over\nTOneQueries{} held-out queries, with nDCG@10, Recall@50 and MRR alongside.\textbf{T2, incidence prediction.} Given a narrator and an event cell, predict whether that
 narrator is incident to that event, a link task over the bipartite incidence relation, scored
-by AUC. In the primary regime negatives come from cells at a short random-walk distance, so
+by AUC. In the primary regime, negatives come from cells at a short random-walk distance, so
 they are plausible.
 
 By design, the two tasks are not aligned. T1 is scored over moment representations and T2
@@ -1044,8 +1043,8 @@ the negative ratio are fixed for every model, and Section~\ref{sec:p3} reports a
 equal-budget sweep over the two models the argument rests on. Only hidden width varies,
 binary-searched over $[8,256]$ so that each lands within $15\%$ of the shared
 \paramBudget{}-parameter budget. Without that budget, relation-specific models carry roughly
-twice the parameters of shared-weight models at equal width, which would leave any difference
-between them unattributable.
+twice the parameters of shared-weight models at equal width, leaving any difference between
+them unattributable.
 
 \section{Related work}
 \label{sec:related}
@@ -1117,12 +1116,13 @@ study runs three programmatic protocols implementing the written manual.
 That substitution changes what P2 can claim. Treating the protocols as a lower bound on human
 agreement would assume misreading is the only source of human disagreement, when two people
 who both know Minidoka is a camp would agree whatever the manual said. The direction of that
-bias is not fixed, so we claim none. What we report is narrower: three independently defined
-programmatic interpretations of one written manual, each consistent with its rules, compute
-different functions, which is evidence about the specification rather than about people.
+bias is not fixed, so we claim none, and report the narrower result: three independently
+defined programmatic interpretations of one written manual, each consistent with its rules,
+compute different functions, which is evidence about the specification rather than about
+people.
 
 In the primary cell the trained models span \paramSpread{} between largest and smallest, and
-every result in that grid is averaged over \nSeeds{} seeds; the factorial and checkpoint
+every result is averaged over \nSeeds{} seeds; the factorial and checkpoint
 sweeps of Section~\ref{sec:p3} run \facSeeds{} seeds, the tuning grid \tuneSeeds{} and the
 partition replication \partSeeds{}, stated where each appears. Cost is not the obstacle:
 building the complex takes \costBuild{}~s, features \costFeat{}~s and the star expansion
@@ -1148,15 +1148,14 @@ distinction returns \sizeOnlyMI{} nats, the floor the estimator clips a non-posi
 Over all nine granularity and rank-map cells the best any size-only predictor reaches is
 \sizeOnlyMax{}, so P1 no longer rests on a correlation threshold.
 
-That precondition is on \emph{this} construction rather than on granulation in general: rank
-here records descriptive abstraction rather than headcount, so a ladder recoverable from size
-would carry nothing the cardinality did not.
+That precondition is on \emph{this} construction, where rank records descriptive abstraction
+rather than headcount, so a ladder recoverable from size would carry nothing the cardinality
+did not.
 
 Two conditions bound it. Ranks 0 and 1 are
 size-constrained by construction, since a segment has one speaker, so pairs involving them
-re-measure that definition rather than the ladder; over all pairs at ranks 1--3 the ladder
-orders by size correctly \concordanceRate{} of the time and inverts \inversionRate{} of the
-time. At the rank-2/rank-3 boundary, the one the annotators dispute, the picture depends on
+re-measure that definition rather than the ladder; over ranks 1--3 the ladder orders by size
+correctly \concordanceRate{} of the time and inverts \inversionRate{} of the time. At the rank-2/rank-3 boundary, the one the annotators dispute, the picture depends on
 granularity: \invTwoThree{} of those \pairsTwoThree{} pairs invert at mid, rising above half
 at coarse and falling to about a tenth at fine. P1 passes, and that boundary is where it is
 closest, so how often the ranks invert is not a stable property of the archive.
@@ -1183,9 +1182,8 @@ operator.
 Three protocols implementing the same written manual assign ranks to \nRankTerms{} terms.
 After a documented adjudication round, their rank assignments agree at $\alpha = \alphaRankTwo{}$, against a
 floor of $0.67$ set in advance; $\alpha$ here summarises divergence between program outputs,
-not human inter-annotator reliability. \nDisputed{} terms remain disputed. Disagreement is
-not confined to rare terms: stratifying by term frequency leaves
-$\alpha = \alphaHead{}$ on the
+not human inter-annotator reliability. \nDisputed{} terms remain disputed, and disagreement is
+not confined to rare ones: stratifying by term frequency leaves $\alpha = \alphaHead{}$ on the
 most common terms and $\alpha = \alphaTail{}$ on the rarest, so it is about
 the ladder itself rather than thin evidence.
 
@@ -1197,7 +1195,7 @@ coefficient.
 
 For that case the manual specifies a tie-break: where the evidence is inconclusive, defer to
 the archive's own facet depth. Deferral would ground the ladder in archive practice rather
-than in the annotator, and it is almost never reached, because two protocols answer the
+than the annotator, and it is almost never reached, because two protocols answer the
 manual's questions with complementary tests that cannot return inconclusive. Only the lexical
 protocol defers at all, on \deferLexical{} of terms, and the three are jointly inconclusive on
 \deferBoth{}. The specification appears to settle hard cases by appeal to the archive; in
@@ -1241,14 +1239,12 @@ marginal intervals overlap ([\facThreePlainLo{}, \facThreePlainHi{}] against
 [\facFivePlainLo{}, \facFivePlainHi{}]), but the paired difference does not: resampling the
 \facNarrDisj{} test narrators puts that \facOpPlainDisj{} at [\facOpPlainDisjLo{},
 \facOpPlainDisjHi{}], and the encoded cells reverse at [\facOpEncDisjLo{},
-\facOpEncDisjHi{}]. On matched inputs under the exposure-free split the rank-aware operator
+\facOpEncDisjHi{}]. On matched inputs under the exposure-free split, the rank-aware operator
 does keep a small but reliable advantage, and a random split adds a further
 \facOpPlainGap{}. Encodings are not wasted on the complex,
 since
 its link AUC rises from \facFivePlainAuc{} to \facFiveEncAuc{}; it cannot route them to the
-rank the retrieval task scores. The gap is 1.4-fold in MAP and 5.1-fold in nDCG@10, so the
-complex places relevant passages somewhere in the list but rarely near the top, where an
-archivist reads.
+rank the retrieval task scores.
 
 Both figures condition on one realised partition, so we drew \partN{} of each kind and
 repeated the matched comparison at \partSeeds{} seeds. The operator advantage survives every
@@ -1257,9 +1253,10 @@ random one, positive on all \partN{} draws of both kinds, with the registered ce
 \facOpPlainDisj{} inside the narrator-disjoint range [\partNdMin{}, \partNdMax{}]. The split
 multiplies the gap \partAmp{}-fold and inverts it on \partSignFlips{} of \partN{} pairs; the
 inversion reported below is a comparison of systems, where the star also carries the
-encodings. Exposure costs precision too: seed variance of the gap runs \partSeedVar{} times
-higher under the random split, wide enough that no partition-level component is detectable
-there, against \partNdShare{} of the observed spread under the narrator-disjoint one.
+encodings. Exposure costs precision too, and the split decides which source dominates. Under
+the narrator-disjoint split the partition
+accounts for \partNdShare{} of the variance in the gap; under the random split seed variance
+is \partSeedVar{} times larger and swamps any partition component.
 
 \begin{table}[t]\centering
 \caption{A lossless star expansion is the stronger ranker at matched parameter count.
@@ -1282,7 +1279,7 @@ equal-budget grid of \tuneTrials{} configurations per model over \tuneSeeds{} se
 \tuneGap{}, with the complex's best T1 MAP, \tuneFiveBest{}, below the star's worst,
 \tuneThreeWorst{}. The star's winning configuration there is the registered default,
 $\text{lr} = \tuneThreeLr{}$ and dropout \tuneThreeDo{}, so no tuning advantage was withheld
-from the baseline the argument runs against. All three architectures that never update moment
+from the baseline. All three architectures that never update moment
 representations, this ablation and the two rank-agnostic baselines, sit at the top of the
 link range, while the complex that keeps the moment rank sits near chance. That rank is
 harmless in itself, since the star expansions carry it and score well above the complex; what
@@ -1298,7 +1295,7 @@ do not want the same structure. Ablations of the complex network, primary cell.}
 Two further checks bound the point estimates. Both start from the unit of dependence,
 narrators, whose design effect is \designEffect{} ($\text{ICC} = \iccNarrator{}$ over
 \nClusters{} narrators), so intervals computed as though the \nIncidences{} incidences were
-independent would be narrower than honest ones by roughly \deffSqrt{}. On the link task the
+independent would be narrower than honest ones by roughly \deffSqrt{}. On the link task, the
 complex reaches a narrator-clustered per-incidence accuracy of \ccnnAccPoint{} (95\% CI
 [\ccnnAccLo{}, \ccnnAccHi{}]), an interval containing chance. Narrator counts differ by
 statistic, each naming a population: \obsGround{} in the archive, \doseNarrators{} with a
@@ -1314,7 +1311,8 @@ the \interactionNarrators{} narrators appearing in test-set pairs, most of them 
 sampled negatives rather than through a held-out incidence, it puts the interaction at
 \interactionCoef{} (95\% CI [\interactionCiLo{}, \interactionCiHi{}],
 $p = \interactionP{}$). Event count here is smaller than the \nRankTwoCells{} rank-2 cells in
-the complex because the model is fitted on held-out test incidences. The interval excludes
+the complex because the model is fitted on held-out test incidences. Fitted that way, the
+interval excludes
 zero, and the sign is the one the representation should have ruled out: the complex falls
 further behind the typed star as events grow, precisely where the extra ranks were supposed
 to earn their place.
@@ -1332,9 +1330,9 @@ all \asoBonferroni{} ordered pairs rather than the single pair P3 names leaves i
 conservative.
 
 One defence of a rank-structured model remains: it should pay off precisely where structure
-is richest, on events many narrators describe. Panel (b) of Figure~\ref{fig:models} tests that
-directly and finds the opposite, the complex leading only on the two smallest bins, where the
-intervals are widest, and falling progressively further behind as events grow, the same
+is richest, on events many narrators describe. Panel (b) of Figure~\ref{fig:models} stratifies
+by event size and finds the opposite, the complex leading only on the two smallest bins, where
+the intervals are widest, and falling progressively further behind as events grow, the same
 pattern the interaction estimate reports.
 
 \begin{figure*}[t]\centering
@@ -1357,8 +1355,8 @@ splits, the pre-registered narrator-disjoint one, the typed star leads; under a 
 the ordering inverts and the complex leads by a wide margin (\MfiveToneRandom{} against
 \MthreeToneRandom{}), and under an event-disjoint split it leads again. What those splits
 share is the partition rather than the architecture: only the narrator-disjoint split keeps a
-narrator's segments on one side, so the other two reward a model for recognising a narrator it
-was trained on.
+narrator's segments on one side, so the other two reward recognising a narrator the model was
+trained on.
 
 The quantity carrying the claim is the difference between those two gaps. Seeds measure
 optimisation noise, but the sampling unit the claim is about is the query, and queries
@@ -1369,16 +1367,18 @@ exceeds the star's by \didPoint{} MAP, with a 95\% interval of [\didLo{}, \didHi
 therefore does not equal the difference of the cell means above. Nor does the reversal depend
 on the selection
 rule: reselecting every checkpoint by validation MAP leaves it at \selRandMap{} against
-\selRandAuc{} over \selSeeds{} seeds. Nor is it an artefact of one partition: repeating the
-registered comparison on \partN{} independently drawn partitions of each kind leaves the star
+\selRandAuc{} over \selSeeds{} seeds. Seeds aside, it is not an artefact of one partition
+either: repeating the
+registered comparison at \partSeeds{} seeds on \partN{} independently drawn partitions of
+each kind leaves the star
 ahead on every narrator-disjoint draw and the complex ahead on every random one,
 \partRegNdMean{} against \partRegRandMean{} in the mean, so the two split types disagree
 about the sign on \partRegFlips{} of \partN{} pairs.
 
 Little else matters. Table~\ref{tab:invariance} varies every design axis the field argues
 about, granularity, negative-sampling regime and rank map, and the ordering survives
-\invarianceWins{} of \invarianceTotal{} conditions. One axis reverses that ordering, and it is
-usually a default rather than a decision.
+\invarianceWins{} of \invarianceTotal{} conditions. The one axis that reverses that ordering
+is usually a default rather than a decision.
 
 \begin{table}[t]\centering
 \caption{The system-level ordering survives every design choice except the split. Each row
@@ -1395,11 +1395,12 @@ A model's score under a random split minus its score under an entity-disjoint on
 \section{Mechanism: narrator identity in the features}
 \label{sec:mechanism}
 
-An explanation is owed, and two experiments run after the split result, labelled exploratory,
-supply one more concrete than idiolect. Feature construction is identical for every model: a
+An explanation is owed, and two exploratory experiments run after the split result supply one
+more concrete than idiolect. Feature construction is identical for every model: a
 rank-0 narrator is the mean of that narrator's segment embeddings, and a rank-$k$ cell the
 mean of its constituent rank-0 features, built once from the whole archive and split
-afterwards. A narrator's vector therefore aggregates every segment that narrator contributed,
+afterwards. Because they are split afterwards, a narrator's vector aggregates every segment
+that narrator contributed,
 and the narrator-disjoint split closes both routes at once, the repeated vector and the
 cross-partition text. Those routes exist because the obstruction of
 Proposition~\ref{prop:obstruction} reaches the features, which does not depend on this
@@ -1414,11 +1415,11 @@ Where a cell has the single owner $\pi(c)$, its input is a function of $\pi(c)$ 
 separating two such cells requires message passing through a cell of rank at least two.
 \end{proposition}
 
-So \obsCells{} moments admit at most \obsDistinct{} distinct rank-1 inputs
-(Figure~\ref{fig:overview}b). For the mean, $\varphi(\{x\}) = x$, so a moment's input vector
+So \obsCells{} moments admit at most \obsDistinct{} distinct rank-1 inputs, a
+\obsCollapse{}-fold collapse (Figure~\ref{fig:overview}b). For the mean, $\varphi(\{x\}) = x$, so a moment's input vector
 \emph{is} its narrator's vector; a learnable $\varphi$ changes the value but not the
-dependence on $\pi(c)$ alone. We verified the equality: for every narrator holding more than
-one such moment, the largest elementwise difference between two of them is exactly zero.
+dependence on $\pi(c)$ alone. We verified it: for every narrator holding more than
+one such moment, the largest elementwise difference between two is exactly zero.
 
 The split decides whether that degeneracy is visible. Of \straddleTotal{} narrators,
 \straddleRandomN{} straddle the random split (\straddleRandom{}) and \straddleEventN{} the
@@ -1436,57 +1437,58 @@ one lifting: across \liftConfigs{} liftings the singleton fraction ranges
 because it follows from how many cells an entity owns rather than from how many it owns
 alone. Those liftings are this archive's rank maps and granularities, so the sweep bounds the
 choice rather than the collection.
-
 That first experiment is easy to over-read, so its control comes first. A linear probe
 recovers narrator identity from the \emph{input} rank-1 features at
 \probeInputControl{} over \probeClasses{} narrators and \probeN{} moments, against a
 majority-class floor of \probeChance{}, a tautology since the classes are identical vectors.
 The probe is a multinomial logistic regression over standardised rank-1 vectors, fitted on a
 stratified split of segments rather than narrators, so every class appears on both sides.
-What the trained models show is how much inherited identity survives
+The trained models show how much inherited identity survives
 message passing, and the answer is most of it: \probeNarrFive{} for the complex against
 \probeNarrThree{} for the typed star under the narrator-disjoint split, \probeRandFive{}
-against \probeRandThree{} under the random one. Complex scores are higher in both and the
-seed spreads overlap, so neither architecture discards narrator identity.
+against \probeRandThree{} under the random one. Complex scores are higher in both, so neither
+architecture discards narrator identity.
 
 A second experiment intervenes on the mechanism: we shuffled narrator labels across segments,
 preserving segments per narrator, and re-ran both splits. Anonymisation changes which
-passages count as positives, so an anonymised score is not comparable to a real one; what is
-comparable is the \emph{gap between splits}, because both are transformed alike. With real
+passages count as positives, so the comparable quantity is the \emph{gap between splits},
+which both transformations preserve. With
+real
 narrators the complex gains \gapRealFive{} MAP moving from the narrator-disjoint split to the
-random one. With identity destroyed that difference is \gapAnonFive{}, a reduction of
+random one; with identity destroyed that difference is \gapAnonFive{}, a reduction of
 \gapReductionFive{}, so its whole advantage disappears. The star's gap
 falls too, from
 \gapRealThree{} to \gapAnonThree{}, by less than half as far and from a value that was never
-positive: the shuffle costs the complex its advantage and costs the star a gap it did not
-have.
+positive.
 
 Shuffling also separates the two routes: it preserves how many segments each label holds, so
 cross-partition aggregation survives while identity correspondence does not, and a shuffled
-aggregate has less to leak, which makes split-first features the direct test.
+aggregate has less to leak, which makes split-first features the direct test. Each narrator's
+vector is then rebuilt from that narrator's training-side segments, a segment counting as
+training-side when none of that narrator's incidences through it are held out, with a fallback
+to a narrator's own segments, not a leak because a new interview arrives at deployment with
+its transcript. Under the random split this strips a mean \sfMeanRemoved{} of the segments
+contributed by each of \sfNarrTouched{} affected narrators.
 
-Each narrator's vector is rebuilt from that narrator's training-side segments, a segment
-counting as training-side when none of that narrator's incidences through it are held out,
-with a fallback to a narrator's own segments, not a leak because a new interview arrives at
-deployment with its transcript. Under the random split the construction strips a
-mean \sfMeanRemoved{} of the segments contributed by each of \sfNarrTouched{} affected
-narrators.
-
-The reversal survives it, which is what we predicted in writing beforehand. Moving from the
+The reversal survives it, as we predicted in writing beforehand. Moving from the
 narrator-disjoint split to the random one, the complex gains \sfLiftFiveGlobal{} MAP under
 global features and \sfLiftFiveSF{} under split-first ones, and the input-matched star gains
 \sfLiftThreeGlobal{} and \sfLiftThreeSF{}. Both arms come from one re-run of the primary
 cell, so they are comparable to each other rather than to the grid values above.
 Removing every token of test-side text leaves the
-advantage where it was, so cross-partition aggregation is not the carrier and what the random
-split rewards is repeated narrator identity.
+advantage where it was, so cross-partition aggregation is not the carrier, and what the random
+split rewards is the owner-identity channel through the narrator layer. Which part of that
+channel carries it we do not separate: shuffling destroys the correspondence between a
+narrator and the events attested, but a straddling narrator is still one node bridging both
+sides, so the repeated rank-1 vector and the shared rank-0 node fall together. Duplicating
+straddling narrators into fold-specific copies, features unchanged, would separate them.
 
 The spectral encodings suppress exposure in both architectures, which is the second lever on
 the same mechanism. Across the factorial, the star's exposure gap falls from
 \facExpThreePlain{} on plain inputs to \facExpThreeEnc{} with the encodings, and the
-complex's from \facExpFivePlain{} to \facExpFiveEnc{}. On matched inputs both leak, the
-complex by roughly \facExpFivePlain{} against \facExpThreePlain{}, so the leak is
-differential rather than present in one architecture and absent in the other. Features that
+complex's from \facExpFivePlain{} to \facExpFiveEnc{}. On matched inputs both leak, so the
+leak is differential rather than present in one architecture and absent in the other. Features
+that
 carry structure rather than identity reduce what a random split can reward, whichever operator
 reads them.
 
@@ -1512,11 +1514,9 @@ instead of its narrator's mean, holding the complex, the splits, the seeds and t
 fixed. Two moments by one narrator are then no longer identical at the input, and the gap
 still did not close: against that experiment's own baseline it moved from \featGapMean{} to
 \featGapItem{} for the complex, slightly wider rather than narrower, and the typed star
-stayed where it was (\featGapMeanThree{} against \featGapItemThree{}). We report that
-refuted prediction because it bounds the claim. Only the rank-1 features changed, while the
-rank-0 narrator layer and every message path through it stayed in place, and that layer is
-what anonymisation destroys, which is why splitting on the narrator fixes the leak and editing
-features does not.
+stayed where it was (\featGapMeanThree{} against \featGapItemThree{}). We report that refuted prediction because it bounds the claim:
+only the rank-1 features changed, and the rank-0 narrator layer that anonymisation destroys
+stayed in place.
 
 A dose-response prediction is also on the record: the complex's per-narrator random-split
 advantage should rise with that narrator's segment count, against a flat control slope. Over
@@ -1526,8 +1526,8 @@ complex falls further behind on prolific narrators exactly where it cannot have 
 the mechanism stands on the intervention rather than on the correlation.
 
 Our dense baseline is scored on each passage's own frozen embedding while every trained model
-sees its narrator's mean, so \MoneTone{} reflects that trade; the typed star against the
-complex, which is what the paper claims, sits on identical inputs.
+sees its narrator's mean, so \MoneTone{} reflects that trade, while the typed star against the
+complex, the paper's claim, sits on identical inputs.
 
 \section{Four rival explanations}
 
@@ -1539,11 +1539,11 @@ the granularities of \S\ref{sec:p2} renamed, agreeing no better than \extractorM
 under-merged (\S\ref{sec:extractor}), so perhaps the complex is being asked to model damage.
 Rebuilding the archive with the \goldTermsExcluded{} contested terms removed leaves
 \goldSubsetSegments{} segments and \goldCells{} rank-2 cells, against the \nRankTwoCells{}
-the primary complex carries. All models rise on the reduced grid because the candidate pool
-shrinks, and the star--complex ordering is unchanged, \goldMthree{} against \goldMfive{}, so
-the damage is not what the complex is modelling. A parameter-free baseline rises furthest, to
-\goldMone{}, and overtakes both, which is a pool-size effect and a reminder of how little of
-this ranking the learned structure contributes.
+the primary complex carries. All models rise because the candidate pool shrinks, and the
+star--complex ordering is unchanged, \goldMthree{} against \goldMfive{}, so the damage is not
+what the complex is modelling. A parameter-free baseline rises furthest, to \goldMone{}, and
+overtakes both, a pool-size effect and a reminder of how little of this ranking the learned
+structure contributes.
 
 \paragraph{Curated cells survive their own error rates.} We propagated the measured merge and
 split error rates through the complex over a \pertGridPoints{}-point grid per calibration,
@@ -1553,7 +1553,7 @@ threshold of \pertThreshold{}, and that is the figure governing the triage we re
 the complex analysed here is built from the curated vocabulary. Substituting the extractor's
 own error rate drops retention to \pertRbo{}, below the threshold, whose committed consequence
 is that an automatically built triage list needs human verification. Instability here is
-inherited from the extractor, not from the curated cells.
+inherited from the extractor.
 
 \paragraph{Counting interviewers erases the phenomenon.} Counting interviewer turns as
 attestations inflates every cell, taking the singleton fraction from \singletonNarrators{} to
@@ -1563,19 +1563,20 @@ matters is inspected.
 
 \section{Utility of the representation}
 
-The application claim is archival triage: surfacing events that rest on too few voices. The
+The application is archival triage, surfacing events that rest on too few voices, reported as
+motivation for the representation rather than as evidence of a better retrieval system. The
 quantity ranked is \emph{archive-conditioned} attestation multiplicity, how many narrators
 \emph{in this collection} describe an event, so one thinly attested here may be abundantly
 documented elsewhere. Of the top \triageK{} triage items \triageUnstable{} are unstable under
 the conditions tested, so the list is a screening device; each item ships with the probability
 that it is a singleton only through extraction error.
 
-\paragraph{Mention frequency sets the bar the structure has to clear.} Archive-conditioned
+\paragraph{Mention frequency sets a bar the structure does not clear.} Archive-conditioned
 attestation multiplicity correlates with bare mention frequency at $\rho = \freqSpearman{}$,
 the two triage lists agree at $\text{RBO}_{50} = \freqRbo{}$, and they share a Jaccard overlap
 of \freqJaccard{} in their top ten. Counting mentions recovers most of what the ladder, the
-encodings and the complex were built to recover, so the structure-derived ranking has to
-justify itself where the two disagree, and that region is the minority of the list.
+encodings and the complex were built to recover, so the structure has to justify itself where
+the two disagree.
 
 \section{Transfer to a held-out collection}
 
@@ -1584,17 +1585,17 @@ hyperparameter was fixed on the primary archive and applied untuned to held-out 
 of \transferInterviews{} interviews and \transferSegments{} segments. Rank and cardinality:
 $\rho = \transferRho{}$ over \transferCells{} rank-2 cells, against \nRankTwoCells{} at home.
 Rank agreement: $\alpha = \transferAlpha{}$. Models: typed star \transferMthree{}, complex
-\transferMfive{}. Those levels are not comparable with the primary archive's, given the
-smaller cell count and the absence of transcripts, so we leave the model comparison unread
-there. Our pre-registered test is narrower: whether the interaction estimate keeps its sign
-and magnitude. It does not, so the interaction finding is archive-specific, as we committed
+\transferMfive{}, levels not comparable with the primary archive's given that cell count and
+the absence of transcripts, so we leave that comparison unread. Our
+pre-registered test is narrower: whether the interaction estimate keeps its sign and
+magnitude. It does not, so the interaction finding is archive-specific, as we committed
 in advance.
 
 \section{Release and instruments}
 
 A registered topology analysis is absent: its permutation null tests nothing, since shuffling
 which rank-2 cell holds which narrator set is a relabelling and homology ignores labels, so
-$p = \topoPermP{}$ was forced by construction. Event-size and connectivity moments predict
+$p = \topoPermP{}$ was forced by construction. Event size and connectivity predict
 $\beta_1$ at $R^2 = \topoBetaOneRtwo{}$, above the registered $0.9$.
 
 Every estimator was asserted against a known answer before being pointed at the archive,
@@ -1613,7 +1614,7 @@ people agree, and the transfer collection refutes a strong effect without confir
 one. Four others are registered: no expert panel, no external coreference corpus, no second
 archive, and a self-sufficiency check for independent reproduction. No contemporary
 generalised-CCNN baseline was run, so the operator comparison is with the star expansion and
-the hypergraph family. Our corpus is one archive in one language, and the ladder is its
+the hypergraph family. Our corpus is one archive in one language whose ladder is its
 cataloguers' choice, so a different descriptive tradition could behave differently. What
 survives those caveats is the structure of the argument: the three preconditions are testable
 anywhere, and the lifting creates the same exposure wherever cells share recurring owners,
@@ -1625,15 +1626,16 @@ The ownership obstruction is what this archive turned up. Where items are singly
 cells above the owners are not subsets a combinatorial complex can hold apart, and here
 \obsCells{} moments collapse onto \obsDistinct{} supports, so a lifted rank-1 feature is a
 function of who owns it. Rank carries information beyond cell cardinality and the star
-expansion is lossless, so the ladder is real; the specification does not yet supply a
-reproducible assignment, and our ranked-incidence model has still to earn its extra structure. What the star
+expansion is lossless, so the ladder is real; the specification does not yet determine the
+assignment, and our ranked-incidence model has still to earn its extra structure. What the star
 wins with, though, is its inputs: on matched features the ordering reverses, so the
 registered verdict is about the system rather than the operator.
 
 Evaluation decides whether the collapse is visible. A random split lifts the complex
 \didPoint{} MAP more than it lifts the star (95\% CI [\didLo{}, \didHi{}]), and that
-difference survives rebuilding every feature split-first, so the carrier is repeated narrator
-identity. Shuffling that identity removes the advantage, and giving each moment its own
+difference survives rebuilding every feature split-first, so the carrier is the owner-identity
+channel through the narrator layer. Shuffling that identity removes the advantage, and giving
+each moment its own
 passage text does not. Which split is correct depends on the deployment population: entity
 overlap invalidates unseen-narrator retrieval and requires an entity-disjoint split, while
 for within-archive retrieval it is legitimate provided the exposure is reported rather than
